@@ -1,0 +1,1103 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Srishti Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long scrolling record sleeve. Sticky nav, hero with halftone halo, story-style greatest hits, then discography, words, about, hire. A small floating "now playing" pill follows the reader. Committed dark world in oxblood; the contrast variant turns About blush. */
+:root{
+  --ink:#060402; --wine:#1c0203; --wine2:#370403; --ox:#4b0304; --ox2:#6e0a0e; --crimson:#c0182a;
+  --blush:#ffded8; --blush2:#ffe6e1; --soft:#ece4e1; --sand:#cebdb2; --grey:#9c8a84; --line:rgba(255,222,216,.12);
+  --glass:rgba(255,222,216,.06);
+  --display:"Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  --wrap:1180px; --r:22px;
+  color-scheme:dark;
+}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--ink);color:var(--soft);font:16px/1.55 var(--display);
+  background-image:radial-gradient(90% 50% at 50% -10%,var(--wine2),transparent 70%),radial-gradient(70% 40% at 50% 110%,var(--wine),transparent 70%);background-attachment:fixed}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--blush);outline-offset:3px;border-radius:8px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:24px}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.eyebrow{font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--grey)}
+.dots{background-image:radial-gradient(rgba(255,222,216,.55) 1.1px,transparent 1.6px);background-size:9px 9px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backdrop-filter:blur(14px);background:rgba(6,4,2,.72);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:64px}
+.logo{display:flex;align-items:baseline;gap:5px;font:700 20px var(--display);text-decoration:none;letter-spacing:-.03em;color:#fff}
+.logo .serif{font-size:21px;color:var(--blush)}
+.disc{width:28px;height:28px;border-radius:50%;background:repeating-radial-gradient(circle,#2a0606 0 1.5px,#120202 1.5px 3px);position:relative;box-shadow:0 0 0 1px var(--line)}
+.disc::after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--crimson);box-shadow:inset 0 0 0 3px var(--ox)}
+.playing .disc{animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.links{display:flex;gap:22px;margin-left:auto;font-size:14px;font-weight:500}
+.links a{text-decoration:none;color:var(--sand)}
+.links a:hover{color:var(--blush)}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:99px;padding:11px 20px;font-weight:600;font-size:14px;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.blush{background:var(--blush);color:var(--ox)}
+.btn.ghost{border:1px solid rgba(255,222,216,.35);color:var(--blush)}
+.btn.ghost:hover{background:var(--glass)}
+.btn.red{background:linear-gradient(135deg,var(--crimson),var(--ox));color:#fff}
+.playic{width:30px;height:30px;border-radius:50%;background:var(--ox);color:var(--blush);display:grid;place-items:center;margin:-6px 0 -6px -10px}
+.playic svg{width:12px;height:12px}
+
+/* hero */
+.hero{padding-block:56px 40px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center}
+.hero h1{font:700 clamp(54px,8.4vw,112px)/.9 var(--display);letter-spacing:-.05em;margin:18px 0 20px;color:#fff}
+.hero h1 .serif{display:block;color:var(--blush);font-size:.82em;letter-spacing:-.01em;margin-top:6px}
+.hero .lead{font-size:clamp(17px,1.6vw,20px);color:var(--sand);max-width:40ch;margin:0}
+.svc{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px}
+.svc span{border:1px solid var(--line);background:var(--glass);border-radius:99px;padding:7px 14px;font-size:13px;font-weight:500;color:var(--soft)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.portrait{position:relative;max-width:470px;margin-left:auto;width:100%}
+.portrait .halo{position:absolute;inset:6% -4% 0 6%;border-radius:50% 50% 24px 24px / 42% 42% 24px 24px;background:radial-gradient(circle at 50% 35%,var(--ox2),var(--wine) 70%)}
+.portrait .halo.dots{background-color:transparent;-webkit-mask-image:radial-gradient(circle at 78% 22%,#000 0,transparent 55%);mask-image:radial-gradient(circle at 78% 22%,#000 0,transparent 55%)}
+.portrait .frame{position:relative;border-radius:0 0 24px 24px;overflow:hidden;padding-top:6%}
+.portrait img{width:100%;height:auto;position:relative}
+.portrait .frame::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(transparent,var(--ink))}
+.bubble{position:absolute;z-index:2;background:rgba(75,3,4,.88);backdrop-filter:blur(8px);border:1px solid rgba(255,222,216,.18);color:var(--blush2);border-radius:18px;padding:10px 14px;font-size:13px;line-height:1.3;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.bubble small{display:block;color:var(--grey);font:500 10px var(--mono);letter-spacing:.08em;margin-top:4px}
+.bubble.b1{left:-10%;top:58%;border-bottom-left-radius:4px}
+.bubble.b2{right:-4%;bottom:16%;background:var(--blush);color:var(--ox);border-bottom-right-radius:4px}
+.bubble.b2 small{color:var(--ox2)}
+
+/* sections */
+section.s{padding-block:64px}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.sh h2{font:700 clamp(34px,4.4vw,56px)/.95 var(--display);letter-spacing:-.04em;margin:10px 0 0;color:#fff;text-wrap:balance}
+.sh h2 .serif{color:var(--blush)}
+.sh p{margin:0;color:var(--sand);max-width:46ch}
+.bars{display:grid;grid-auto-flow:column;gap:6px;margin-bottom:18px}
+.bars button{height:4px;border-radius:4px;background:rgba(255,222,216,.18);overflow:hidden;position:relative}
+.bars button i{position:absolute;inset:0;width:0;background:var(--blush2)}
+.bars button.done i{width:100%}
+
+/* stories */
+.story{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:28px;align-items:stretch;background:linear-gradient(135deg,rgba(110,10,14,.55),rgba(28,2,3,.7));border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative;overflow:hidden}
+.story::before{content:"";position:absolute;right:-60px;top:-60px;width:320px;height:320px;border-radius:50%}
+.frame4{position:relative;overflow:hidden;background:#000;aspect-ratio:4/5;width:100%}
+.frame4 .bg{position:absolute;inset:-20px;width:calc(100% + 40px);height:calc(100% + 40px);object-fit:cover;filter:blur(22px) brightness(.55);transform:scale(1.05)}
+.frame4 .fg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.story .phone{border-radius:18px;align-self:start}
+.igbadge{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:3;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;background:rgba(6,4,2,.72);backdrop-filter:blur(8px);border:1px solid rgba(255,222,216,.3);color:var(--blush2);border-radius:99px;padding:8px 14px 8px 8px;font-size:13px;font-weight:600;text-decoration:none}
+.igbadge .playic{margin:0;width:26px;height:26px;background:var(--blush);color:var(--ox)}
+.igbadge .playic svg{width:10px;height:10px}
+.igbadge:hover{background:rgba(75,3,4,.9)}
+.story .tap{position:absolute;top:0;bottom:0;width:40%;z-index:2}
+.story .tap.l{left:0}.story .tap.r{right:0}
+.story .info{display:flex;flex-direction:column;gap:16px;padding:10px 4px;position:relative;min-width:0}
+.story .num{font:500 12px var(--mono);color:var(--grey);letter-spacing:.1em}
+.story h3{margin:0;font:700 clamp(26px,3vw,40px)/1.05 var(--display);letter-spacing:-.03em;color:#fff;text-wrap:balance}
+.story .albname{color:var(--sand);font-size:14px}
+.story p.note{margin:0;color:var(--soft);max-width:52ch;font-size:16px}
+.credits{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:8px}
+.credits .eyebrow{margin-bottom:2px}
+.cr{display:flex;flex-wrap:wrap;gap:6px}
+.cr span{background:rgba(255,222,216,.08);border:1px solid var(--line);border-radius:99px;padding:5px 11px;font-size:13px}
+.cr span b{font-weight:600;color:var(--blush)}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:rgba(6,4,2,.45);border:1px solid var(--line);border-radius:14px;padding:10px 14px;min-width:96px}
+.stat b{display:block;font:700 22px/1 var(--display);color:#fff;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--grey)}
+.story .nav2{margin-top:auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.circ{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,222,216,.3);display:grid;place-items:center;color:var(--blush)}
+.circ:hover{background:var(--glass)}
+.circ svg{width:18px;height:18px}
+.circ.main{background:var(--blush);color:var(--ox);border:0;width:52px;height:52px}
+
+/* tracklist */
+.tl-head{display:flex;justify-content:space-between;align-items:baseline;margin:40px 0 10px}
+.tl-head h3{margin:0;font:700 22px var(--display);color:#fff;letter-spacing:-.02em}
+.tracks{display:flex;flex-direction:column}
+.tr{display:grid;grid-template-columns:30px 48px minmax(0,1fr) auto 90px;gap:16px;align-items:center;padding:8px 12px;border-radius:12px;width:100%;text-align:left}
+.tr:hover{background:var(--glass)}
+.tr .n{font:500 14px var(--mono);color:var(--grey);text-align:right;font-variant-numeric:tabular-nums}
+.tr img,.tr .tc{width:48px;height:48px;border-radius:8px;object-fit:cover}
+.tr b{display:block;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tr small{display:block;color:var(--grey);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tr .v{font:500 13px var(--mono);color:var(--sand);text-align:right;font-variant-numeric:tabular-nums}
+.tr .f{font-size:13px;color:var(--grey);text-align:right}
+.tr.on b{color:var(--blush)}
+.tr .goal{display:inline-block;font:500 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ox);background:var(--blush);border-radius:99px;padding:4px 7px;margin-right:6px;vertical-align:1px}
+.tc{display:flex;align-items:flex-end;padding:8px;font:700 10px/1 var(--display);color:#fff;text-transform:lowercase}
+
+
+/* hits controls + tour */
+.hitsbox{position:relative}
+.barsrow{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.barsrow .bars{flex:1;margin:0}
+.bars button{height:6px}
+.story .tap{display:flex;align-items:center}
+.story .tap.l{justify-content:flex-start;padding-left:10px}.story .tap.r{justify-content:flex-end;padding-right:10px}
+.chev{width:40px;height:40px;border-radius:50%;background:rgba(6,4,2,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,222,216,.35);display:grid;place-items:center;color:var(--blush2);transition:background .2s,transform .2s}
+.chev svg{width:18px;height:18px}
+.tap:hover .chev{background:var(--blush);color:var(--ox);transform:scale(1.08)}
+.ctrl{margin-top:auto;display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:10px;max-width:440px;width:100%}
+.cb{display:flex;align-items:center;justify-content:center;gap:8px;height:50px;border-radius:99px;border:1px solid rgba(255,222,216,.45);color:var(--blush2);font-weight:700;font-size:15px;background:rgba(6,4,2,.35)}
+.cb svg{width:16px;height:16px}
+.cb:hover{background:rgba(255,222,216,.12)}
+.cb.mid{background:rgba(255,222,216,.14)}
+.cb.nxt{background:var(--blush);color:var(--ox);border-color:var(--blush);animation:nudge 2.4s ease-in-out infinite}
+.cb.nxt:hover{filter:brightness(1.05)}
+@keyframes nudge{0%,80%,100%{transform:none}88%{transform:translateX(4px)}94%{transform:translateX(-1px)}}
+@keyframes bob{50%{transform:translate(-4px,-6px)}}
+
+
+
+/* wrapped */
+.wrapped{border-radius:var(--r);padding:clamp(24px,4vw,44px);position:relative;overflow:hidden;background:linear-gradient(140deg,var(--crimson) -10%,var(--ox) 40%,var(--wine) 100%)}
+.wrapped .dots{position:absolute;inset:0;-webkit-mask-image:radial-gradient(circle at 90% 10%,#000,transparent 45%);mask-image:radial-gradient(circle at 90% 10%,#000,transparent 45%)}
+.wrapped h3{position:relative;font:700 clamp(30px,4.4vw,54px)/.95 var(--display);letter-spacing:-.04em;margin:12px 0 30px;color:#fff;max-width:16ch}
+.wgrid{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px}
+.wgrid b{display:block;font:700 clamp(34px,4.4vw,52px)/1 var(--display);letter-spacing:-.04em;color:#fff;font-variant-numeric:tabular-nums}
+.wgrid span{display:block;margin-top:8px;color:var(--blush2);font-size:14px}
+.funnel{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,222,216,.2)}
+.funnel .eyebrow{width:100%;color:var(--blush);margin-bottom:6px}
+.funnel .arrow{color:var(--blush);opacity:.6;font-family:var(--mono)}
+
+.wgrid .grow .chip{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:rgba(255,222,216,.16);border:1px solid rgba(255,222,216,.3);color:var(--blush2);border-radius:99px;padding:4px 11px 4px 8px;font-size:13px;font-weight:600}
+.wgrid .grow .chip svg{width:15px;height:15px;color:#9be3b1}
+
+.whead{position:relative;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:12px 0 30px}
+.whead h3{margin:0!important}
+.whead .btn{flex:none}
+
+/* discography */
+.shelf{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.alb{display:block;overflow:hidden;text-align:left;text-decoration:none;border-radius:var(--r);padding:12px;background:var(--glass);border:1px solid var(--line);transition:background .2s,transform .2s}
+.alb:hover{background:rgba(255,222,216,.1);transform:translateY(-3px)}
+.alb .sleeve{position:relative;aspect-ratio:1;width:86%;border-radius:14px;margin-bottom:12px}
+.alb .sleeve img,.alb .sleeve .tc{width:100%;height:100%;object-fit:cover}
+.alb .sleeve .tc{font-size:clamp(18px,2vw,26px);padding:14px}
+.alb .vinyl{position:absolute;right:-14%;top:8%;width:84%;aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle,#1a0303 0 2px,#0b0101 2px 4px);transition:right .35s;z-index:0}
+.alb .vinyl::after{content:"";position:absolute;inset:36%;border-radius:50%;background:var(--crimson)}
+.alb .sleeve img,.alb .sleeve .tc{position:relative;z-index:1}
+.alb .sleeve{overflow:visible}
+.alb .sleeve > img,.alb .sleeve > .tc{border-radius:14px}
+.alb:hover .vinyl{right:-24%}
+.alb b{display:block;font-weight:700;color:#fff;font-size:17px}
+.alb span{font-size:13px;color:var(--grey)}
+
+
+/* featuring */
+.feat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.feat .frame4{display:block}
+.feat .frame4:hover .igbadge{background:rgba(75,3,4,.9)}
+.feat figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--glass);border:1px solid var(--line)}
+.feat figcaption{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.feat .figig{flex:none;font-size:12px;font-weight:600;color:var(--ox);background:var(--blush);border-radius:99px;padding:6px 11px}
+.feat b{display:block;color:#fff;font-weight:600}
+.feat figcaption div span{font-size:13px;color:var(--grey)}
+
+
+/* collection stories */
+.stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.cs{border-radius:var(--r);overflow:hidden;background:linear-gradient(170deg,var(--ox),var(--wine) 55%,var(--ink));border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.cs .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;height:150px}
+.cs .strip img{width:100%;height:100%;object-fit:cover}
+.cs .in{padding:20px;display:flex;flex-direction:column;gap:14px;flex:1}
+.cs h3{margin:0;font:400 40px/1 var(--serif);font-style:italic;color:var(--blush2)}
+.cs .steps{display:flex;flex-direction:column;gap:12px;position:relative;padding-left:18px}
+.cs .steps::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1px;background:rgba(255,222,216,.25)}
+.cs .st{position:relative}
+.cs .st::before{content:"";position:absolute;left:-18px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--ox2);box-shadow:0 0 0 2px var(--blush)}
+.cs .st .eyebrow{display:block;margin-bottom:3px;color:var(--blush)}
+.cs .st p{margin:0;font-size:14px;color:var(--soft)}
+.cs blockquote{margin:0;padding:14px 16px;border-radius:14px 14px 14px 4px;background:var(--blush);color:var(--ox);font:italic 400 20px/1.25 var(--serif)}
+.cs .lived{display:flex;flex-wrap:wrap;gap:6px}
+.cs .lived span{font-size:12px;border:1px solid rgba(255,222,216,.25);border-radius:99px;padding:4px 10px;color:var(--sand)}
+.cs .btn{margin-top:auto;align-self:flex-start}
+.pp{margin-top:18px;border-radius:var(--r);padding:20px 22px;background:var(--glass);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.pp > div{min-width:0;flex:1 1 320px}
+.pp b{display:block;color:#fff;font-size:18px;margin:4px 0}
+.pp p{margin:0;color:var(--sand);font-size:14px;max-width:62ch}
+
+
+
+/* duet */
+.duet{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center}
+.duo{display:flex;gap:18px;align-items:center;text-align:left;width:100%;padding:18px;border-radius:var(--r);background:var(--glass);border:1px solid var(--line)}
+.duo:hover{background:rgba(255,222,216,.1)}
+.duo img{width:96px;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:10px;flex:none}
+.duo .lbl{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--blush)}
+.duo h4{margin:6px 0 8px;font:700 20px/1.15 var(--display);color:#fff}
+.duo .big{font:700 38px/1 var(--display);color:#fff;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.duo p{margin:4px 0 0;color:var(--sand);font-size:14px}
+.or{font:italic 400 44px var(--serif);color:var(--grey)}
+
+/* words */
+.words{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}
+.words .chat{display:flex;flex-direction:column;height:560px}
+.words > div:first-child{align-self:center}
+.words .chat .msgs{flex:1;min-height:0;max-height:none;-webkit-mask-image:linear-gradient(transparent,#000 18px,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(transparent,#000 18px,#000 calc(100% - 40px),transparent);padding-bottom:30px}
+.where{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.where span{border:1px solid rgba(255,222,216,.3);border-radius:99px;padding:6px 14px;font-size:13px;font-weight:500;color:var(--blush2)}
+.colls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px}
+.coll{border-radius:18px;padding:18px;background:linear-gradient(160deg,var(--ox),var(--wine));border:1px solid var(--line);display:flex;flex-direction:column;gap:6px;min-width:0}
+.coll .eyebrow{color:var(--sand)}
+.coll h4{margin:0;font:400 34px/1 var(--serif);font-style:italic;color:var(--blush2)}
+.coll p{margin:0;font-size:14px;color:var(--sand)}
+.coll .by{margin-top:auto;padding-top:8px;font-size:12px;color:var(--blush)}
+.chat{border-radius:var(--r);overflow:hidden;background:radial-gradient(120% 60% at 50% 0%,rgba(110,10,14,.55),transparent 60%),linear-gradient(180deg,#2a0204,#120102);border:1px solid rgba(255,222,216,.16);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.chat .top{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid rgba(255,222,216,.1);background:rgba(6,4,2,.35);backdrop-filter:blur(8px)}
+.avs{position:relative;width:52px;height:38px;flex:none}
+.av{position:absolute;width:34px;height:34px;border-radius:50%;border:2px solid #1c0203;object-fit:cover;object-position:top}
+.av.aud{left:0;top:0;background:var(--ox2);color:var(--blush);display:grid;place-items:center}
+.av.aud svg{width:18px;height:18px}
+.av.me{left:18px;top:4px;background:var(--blush2)}
+.chat .who{flex:1;min-width:0}
+.chat .who b{display:block;font-size:15px;color:#fff;letter-spacing:-.01em}
+.chat .who span{font-size:11.5px;color:var(--sand)}
+.chat .who span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#7bd88f;margin-right:6px;vertical-align:1px}
+.ticons{display:flex;gap:14px;color:var(--blush)}
+.ticons svg{width:19px;height:19px}
+.msgs{display:flex;flex-direction:column;gap:6px;padding:16px;max-height:640px;overflow:auto;scrollbar-width:thin;scrollbar-color:rgba(255,222,216,.25) transparent}
+.day{align-self:center;font:500 10px var(--mono);letter-spacing:.1em;color:var(--sand);text-transform:uppercase;background:rgba(6,4,2,.4);border-radius:99px;padding:5px 10px;margin:2px 0 8px}
+.row{display:flex;align-items:flex-end;gap:8px;max-width:88%}
+.row.in{align-self:flex-start}
+.row.out{align-self:flex-end;flex-direction:row-reverse;margin-bottom:4px}
+.vlink{align-self:flex-end;margin:6px 34px 10px 0;font-size:12px;font-weight:600;color:var(--blush);text-decoration:none;border-bottom:1px solid rgba(255,222,216,.35);padding-bottom:1px}
+.vlink:hover{border-color:var(--blush)}
+.row .mav{width:24px;height:24px;border-radius:50%;flex:none;background:var(--ox2);color:var(--blush);display:grid;place-items:center}
+.row .mav svg{width:13px;height:13px}
+.row.out .mav{background:var(--blush2) url(img/srishti.png) center top/cover}
+.msg{position:relative;padding:10px 14px;border-radius:20px;font-size:14.5px;line-height:1.42;text-align:left;min-width:0}
+.msg.in{background:rgba(255,222,216,.1);color:var(--soft);border-bottom-left-radius:6px}
+.msg.out{background:linear-gradient(160deg,var(--blush2),var(--blush));color:var(--ox);border-bottom-right-radius:6px;cursor:pointer;transition:transform .15s}
+.msg.out:hover{transform:translateY(-1px)}
+.msg .tone{display:block;font:600 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ox2);opacity:.75;margin-bottom:4px}
+.react{position:absolute;left:10px;bottom:-13px;display:flex;align-items:center;gap:4px;background:#1c0203;border:1px solid rgba(255,222,216,.25);border-radius:99px;padding:2px 8px 2px 6px;font:600 11px var(--display);color:var(--blush2)}
+.react svg{width:11px;height:11px;color:#ff5a6e}
+.seen{align-self:flex-end;font-size:10.5px;color:var(--grey);margin:-4px 34px 6px 0}
+.typing{align-self:flex-start;display:flex;gap:4px;padding:12px 14px;border-radius:20px;border-bottom-left-radius:6px;background:rgba(255,222,216,.1);margin-left:32px}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--sand);animation:tdot 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tdot{0%,60%,100%{opacity:.3;transform:none}30%{opacity:1;transform:translateY(-3px)}}
+.compose{text-decoration:none;cursor:pointer;transition:border-color .2s,background .2s;display:flex;align-items:center;gap:10px;margin:0 12px 12px;padding:6px 6px 6px 6px;border-radius:99px;background:rgba(255,222,216,.07);border:1px solid rgba(255,222,216,.12)}
+.compose .cam{width:32px;height:32px;border-radius:50%;background:var(--blush);color:var(--ox);display:grid;place-items:center;flex:none}
+.compose .cam svg{width:16px;height:16px}
+.compose:hover{background:rgba(255,222,216,.12);border-color:rgba(255,222,216,.35)}
+.compose .send{width:34px;height:34px;border-radius:50%;background:var(--blush);color:var(--ox);display:grid;place-items:center;flex:none}
+.compose .send svg{width:16px;height:16px}
+.compose .ph{padding-left:12px;color:var(--sand);flex:1;min-width:0;font-size:13.5px;color:var(--grey);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.compose .heart{color:var(--blush);padding-right:8px;display:grid}
+.compose .heart svg{width:20px;height:20px}
+
+/* about */
+.about{border-radius:28px;padding:clamp(22px,4vw,48px);background:var(--ab-bg);color:var(--ab-fg);border:1px solid var(--ab-line);position:relative;overflow:hidden}
+.about .grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:44px;align-items:center;position:relative}
+.about .pic{border-radius:22px;overflow:hidden;background:var(--ab-pic);padding-top:14px;position:relative}
+.about .pic .dots{position:absolute;inset:0;-webkit-mask-image:radial-gradient(circle at 20% 20%,#000,transparent 55%);mask-image:radial-gradient(circle at 20% 20%,#000,transparent 55%);background-image:radial-gradient(var(--ab-dot) 1.1px,transparent 1.6px)}
+.about .pic img{position:relative;width:100%;height:auto}
+.about h2{font:700 clamp(36px,5vw,64px)/.95 var(--display);letter-spacing:-.045em;margin:10px 0 18px;color:var(--ab-h)}
+.about h2 .serif{color:var(--ab-acc)}
+.about .eyebrow{color:var(--ab-mute)}
+.about p{margin:0 0 14px;max-width:58ch;font-size:17px}
+.genres{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px}
+.genres span{border:1px solid var(--ab-line);border-radius:99px;padding:6px 13px;font-size:13px;font-weight:500;background:var(--ab-chip)}
+.tour{display:flex;flex-direction:column}
+.tour div{display:grid;grid-template-columns:62px minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid var(--ab-line)}
+.tour .y{font:500 13px var(--mono);color:var(--ab-mute);padding-top:2px}
+.tour b{font-weight:700;color:var(--ab-h)}
+.tour p{font-size:14px;margin:3px 0 0;color:var(--ab-mute)}
+.sig{font:italic 400 44px/1 var(--serif);color:var(--ab-acc);margin-top:10px}
+
+
+/* tour */
+.dates{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.date{display:grid;grid-template-columns:130px minmax(0,1fr) 130px 120px;gap:24px;align-items:center;padding:22px 8px;border-bottom:1px solid var(--line);transition:background .2s}
+.date:hover{background:var(--glass)}
+.when b{display:block;font:700 22px/1 var(--display);color:#fff;letter-spacing:-.02em}
+.when span{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+.what{min-width:0}
+.what .venue{display:block;font:italic 400 28px/1.05 var(--serif);color:var(--blush)}
+.what b{display:block;font-weight:600;color:#fff;margin-top:4px}
+.what p{margin:4px 0 0;color:var(--sand);font-size:14px;max-width:60ch}
+.city{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--sand)}
+.status{justify-self:end;font-size:12px;font-weight:600;border:1px solid rgba(255,222,216,.3);border-radius:99px;padding:6px 12px;color:var(--blush);white-space:nowrap}
+.date.now .status{background:var(--blush);color:var(--ox);border-color:var(--blush)}
+.date.now .when b{color:var(--blush)}
+
+/* hire */
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.plan{border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px;background:var(--glass);border:1px solid var(--line);min-width:0}
+.plan.feat{background:linear-gradient(160deg,var(--crimson) -20%,var(--ox) 35%,var(--wine));border-color:rgba(255,222,216,.25)}
+.plan .tag{align-self:flex-start;font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;border-radius:99px;padding:5px 10px;background:var(--blush);color:var(--ox)}
+.plan h3{margin:0;font:700 28px/1.05 var(--display);letter-spacing:-.03em;color:#fff}
+.plan .for{margin:0;color:var(--sand);font-size:14px}
+.plan ul{list-style:none;margin:8px 0 0;padding:14px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.plan li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;font-size:14px}
+.plan li svg{width:16px;height:16px;margin-top:3px;color:var(--blush)}
+.plan .btn{margin-top:auto;justify-content:center}
+.contact{margin-top:18px;border-radius:var(--r);padding:24px;background:var(--glass);border:1px solid var(--line);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.contact .v{font-weight:600;color:#fff;font-size:17px;overflow-wrap:anywhere;user-select:all;margin:6px 0 10px}
+.chipbtn{font-size:13px;font-weight:600;border:1px solid rgba(255,222,216,.3);border-radius:99px;padding:6px 13px;color:var(--blush);text-decoration:none;display:inline-block}
+.chipbtn:hover{background:var(--glass)}
+footer{padding-block:40px 120px;color:var(--grey);font-size:13px;border-top:1px solid var(--line);margin-top:40px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* now playing pill */
+.np{transition:opacity .25s,transform .25s;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:12px;padding:8px 10px 8px 8px;border-radius:99px;background:rgba(28,2,3,.86);backdrop-filter:blur(14px);border:1px solid rgba(255,222,216,.2);box-shadow:0 14px 40px rgba(0,0,0,.5);width:min(440px,calc(100% - 32px))}
+.np img,.np .tc{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+.np .t{min-width:0;flex:1;text-align:left}
+.np .t b{display:block;font-size:13px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.np .t span{font-size:11px;color:var(--sand)}
+.np .prog{position:absolute;left:24px;right:24px;bottom:0;height:2px;border-radius:2px;background:rgba(255,222,216,.12);overflow:hidden}
+.np .prog i{display:block;height:100%;width:0;background:var(--blush)}
+.np .circ{width:36px;height:36px;flex:none}
+.np .circ.main{width:40px;height:40px}
+.eq{display:inline-flex;gap:2px;align-items:flex-end;height:12px;margin-right:4px}
+.eq i{width:3px;height:30%;background:var(--blush);border-radius:1px}
+.playing .eq i{animation:eq .9s infinite ease-in-out}
+.eq i:nth-child(2){animation-delay:.2s!important}.eq i:nth-child(3){animation-delay:.45s!important}
+@keyframes eq{0%,100%{height:25%}50%{height:100%}}
+
+.np.off{opacity:0;pointer-events:none;transform:translate(-50%,20px)}
+/* sheet */
+.watch{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.links2{display:flex;flex-wrap:wrap;gap:8px}
+.links2 .btn{padding:9px 16px 9px 14px}
+.links2 .playic{width:24px;height:24px;margin:-4px 0 -4px -6px}
+.links2 .playic svg{width:10px;height:10px}
+.links2 .lk{font:500 11px var(--mono);opacity:.7;margin-left:2px}
+.sheet{position:fixed;inset:0;z-index:60;background:rgba(6,4,2,.78);backdrop-filter:blur(8px);display:grid;place-items:center;padding:16px}
+.sheet .in{position:relative;width:100%;max-width:880px;max-height:calc(100% - 16px);overflow:auto;border-radius:24px;background:linear-gradient(160deg,var(--ox),var(--wine) 60%,var(--ink));border:1px solid rgba(255,222,216,.18)}
+.sheet .x{position:absolute;right:14px;top:14px;z-index:3;background:rgba(6,4,2,.6)}
+.sh-track{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr)}
+.sh-track .shot{background:#000;display:flex;align-items:center}
+.sh-track .shot .frame4{align-self:stretch;height:100%;aspect-ratio:auto;min-height:420px}
+.sh-track .shot .tc{width:100%;aspect-ratio:1;font-size:34px;padding:22px}
+.sh-body{padding:28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.sh-body h3{margin:0;font:700 30px/1.05 var(--display);letter-spacing:-.03em;color:#fff;text-wrap:balance}
+.sh-body p{margin:0;color:var(--soft)}
+.sh-album .head{display:flex;gap:24px;align-items:flex-end;padding:28px}
+.sh-album .head > img,.sh-album .head > .tc{width:200px;height:200px;border-radius:16px;object-fit:cover;flex:none;font-size:26px;padding:16px;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.sh-album .head h3{margin:8px 0 10px;font:700 clamp(34px,5vw,56px)/.95 var(--display);letter-spacing:-.045em;color:#fff}
+.sh-album .head p{margin:0;color:var(--sand)}
+.sh-album .body{padding:0 28px 28px}
+.sh-album .grid img{border-radius:14px;max-width:520px;width:100%;margin-top:18px}
+
+@media (max-width:900px){
+  .wrap{padding-inline:16px}
+  .links{display:none}
+  .nav .btn{margin-left:auto}
+  .hero{padding-block:28px 20px}
+  .hero .wrap{grid-template-columns:1fr;gap:20px}
+  .portrait{margin:0 auto;max-width:360px;order:-1}
+  .bubble.b1{left:-2%}.bubble.b2{right:-2%}
+  section.s{padding-block:44px}
+  .story{grid-template-columns:1fr;padding:14px}
+  .ctrl{max-width:none}
+  .cb{height:48px;font-size:14px}
+  .story .phone{max-width:420px;margin:0 auto}
+  .shelf{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .feat{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+  .feat figure{scroll-snap-align:start}
+  .duet{grid-template-columns:1fr}
+  .or{text-align:center;font-size:32px;line-height:.6}
+  .words{grid-template-columns:1fr}
+  .words .chat{height:auto;min-height:0}
+  .words .chat .msgs{max-height:520px}
+  .stories{grid-template-columns:1fr}
+  .about .grid{grid-template-columns:1fr}
+  .about .pic{max-width:340px}
+  .plans,.contact{grid-template-columns:1fr}
+  .date{grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;padding:18px 4px}
+  .date .when{grid-column:1/-1;display:flex;gap:10px;align-items:baseline}
+  .date .what{grid-column:1/-1}
+  .date .city{grid-column:1}
+  .tr{grid-template-columns:22px 44px minmax(0,1fr) auto;gap:10px;padding-inline:6px}
+  .tr img,.tr .tc{width:44px;height:44px}
+  .tr .f{display:none}
+  .sheet{padding:0;place-items:end center}
+  .sheet .in{border-radius:22px 22px 0 0;max-height:92%}
+  .sh-track{grid-template-columns:1fr}
+  .sh-track .shot .frame4{min-height:0;aspect-ratio:4/5;max-height:420px}
+  .sh-album .head{flex-direction:column;align-items:flex-start;padding:22px}
+  .sh-album .head > img,.sh-album .head > .tc{width:150px;height:150px}
+  .sh-album .body{padding:0 16px 22px}
+}
+@media (max-width:480px){ .colls{grid-template-columns:1fr} .alb .vinyl{display:none} }
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+<style>:root{--ab-bg:var(--blush2);--ab-fg:#3a0d0e;--ab-h:#2a0405;--ab-acc:var(--crimson);--ab-mute:#7a4a46;--ab-line:rgba(75,3,4,.16);--ab-chip:rgba(255,255,255,.55);--ab-pic:linear-gradient(170deg,var(--ox),var(--wine));--ab-dot:rgba(255,222,216,.55)}
+.about{box-shadow:0 30px 80px rgba(0,0,0,.45)}</style>
+
+<nav class="nav" id="top">
+  <div class="wrap">
+    <a class="logo" href="#home">srishti<span class="serif">sharma</span></a>
+    <div class="links">
+      <a href="#hits">Greatest hits</a><a href="#discography">Discography</a><a href="#words">Words</a><a href="#about">About</a><a href="#tour">Tour</a>
+    </div>
+    <a class="btn blush" href="#hire">Hire me</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Now playing · brand, content &amp; copy</div>
+      <h1>Srishti Sharma <span class="serif">making brands worth remembering!</span></h1>
+      <p class="lead">I’m a brand and content marketer. I figure out how your audience thinks, then meet them there with visuals, copy and content that build a real relationship with them.</p>
+      <div class="svc"><span>Brand marketing</span><span>Social media marketing</span><span>Content strategy</span><span>Copywriting</span></div>
+      <div class="cta">
+        <button class="btn ghost" data-go="hits" style="padding-left:16px"><span class="playic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span>Play my work</button>
+        <a class="btn ghost" href="#about">About me</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="halo"></div>
+      <div class="halo dots"></div>
+      <div class="frame"><img src="img/srishti.png" alt="Srishti Sharma" width="698" height="959"></div>
+      <div class="bubble b1">currently running Shaya by CaratLane’s Instagram<small>Mumbai · since Feb 2026</small></div>
+      <div class="bubble b2">open to freelance and full-time<small>reply in a day</small></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="s" id="hits">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Side A</div><h2>Greatest <span class="serif">hits</span></h2></div>
+        <p>Tap through like a story. Every piece lists exactly what I did on it.</p>
+      </div>
+      <div class="hitsbox" id="hitsbox">
+        <div class="barsrow"><div class="bars" id="bars"></div></div>
+        <div class="story" id="story"></div>
+      </div>
+      <div class="tl-head"><h3>All tracks</h3><span class="eyebrow">Each one made for a different goal</span></div>
+      <div class="tracks" id="alltracks"></div>
+    </div>
+  </section>
+
+  <section class="s" id="wrapped">
+    <div class="wrap">
+      <div class="wrapped">
+        <div class="dots"></div>
+        <div class="eyebrow" style="color:var(--blush2);position:relative">Srishti Wrapped · @shayagrams · March to September 2026</div>
+        <div class="whead"><h3>Six months of growing an already big account.</h3><a class="btn blush" href="https://www.instagram.com/shayagrams/" target="_blank" rel="noopener">See @shayagrams ↗</a></div>
+        <div class="wgrid">
+          <div class="grow"><b>511K</b><span>followers, March to September, all organic</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l6-6 4 4 6-7"/><path d="M15 7h5v5"/></svg>+51K from 460K</span></div>
+          <div><b>+11%</b><span>audience growth, March to September</span></div>
+          <div><b>104M</b><span>views a month, on average</span></div>
+        </div>
+        <div class="funnel" id="funnel"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="discography">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Side B</div><h2>Discogra<span class="serif">phy</span></h2></div>
+        <p>Campaigns, collections and the work in between. Open one to see its tracks.</p>
+      </div>
+      <div class="shelf" id="shelf"></div>
+    </div>
+  </section>
+
+  <section class="s" id="featuring">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Bonus tracks</div><h2>Featuring <span class="serif">Srishti</span></h2></div>
+        <p>Some briefs needed a face, so I stepped in front of the camera too.</p>
+      </div>
+      <div class="feat">
+        <figure><a class="frame4" href="https://www.instagram.com/reel/DY9ot1bIQWu/" target="_blank" rel="noopener" aria-label="Watch Weekly elevated minimals on Instagram"><img class="bg" src="img/f-saturday.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-saturday.jpg" alt="Srishti styling earrings in a weekend reel" loading="lazy"></a><figcaption><div><b>Weekly elevated minimals</b><span>Styling reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
+        <figure><a class="frame4" href="https://www.instagram.com/reel/DZcaqdKtxw2/" target="_blank" rel="noopener" aria-label="Watch Everyday jewellery on Instagram"><img class="bg" src="img/f-ring.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-ring.jpg" alt="Srishti showing a ring" loading="lazy"></a><figcaption><div><b>Everyday jewellery</b><span>Product reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
+        <figure><a class="frame4" href="https://www.instagram.com/reel/DYCTGH0itAa/" target="_blank" rel="noopener" aria-label="Watch Still figuring out gifts for Maa? on Instagram"><img class="bg" src="img/f-maa.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-maa.jpg" alt="Srishti in a Mother’s Day gifting reel" loading="lazy"></a><figcaption><div><b>Still figuring out gifts for Maa?</b><span>Gifting reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Interlude</div><h2>Two tracks, <span class="serif">two jobs</span></h2></div>
+        <p>Reach and growth are different songs. Some posts are made to be seen by everyone, some to make the right people stay. Knowing which one a brand needs this month is the job.</p>
+      </div>
+      <div class="duet">
+        <button class="duo" data-t="growth">
+          <img src="img/p-insight.jpg" alt="Reel insights screenshot">
+          <div><div class="lbl">Built for growth</div><h4>A small reel that recruits</h4><div class="big">19</div><p>new follows from 17.6K views</p></div>
+        </button>
+        <div class="or">or</div>
+        <button class="duo" data-t="dday">
+          <img src="img/p-dday.jpg" alt="Wedding post screenshot">
+          <div><div class="lbl">Built for reach</div><h4>A big post that spreads</h4><div class="big">93.8K</div><p>views and over a thousand likes</p></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="words">
+    <div class="wrap words">
+      <div>
+        <div class="eyebrow">Liner notes · words by Srishti</div>
+        <div class="sh" style="margin:0"><h2>Read something from Shaya lately? <span class="serif">That was me.</span></h2></div>
+        <p style="color:var(--sand);max-width:52ch;margin:18px 0 0">The words around whole collections, the captions that launched them, and the name and description on the product you almost added to cart. If Shaya said it on the website, in the app, in your inbox or WhatsApp, or on a card in a store, there’s a good chance I wrote it.</p>
+        <div class="where"><span>Website</span><span>App</span><span>CRM</span><span>WhatsApp</span><span>Retail</span><span>Instagram</span></div>
+      </div>
+      <div class="chat">
+        <div class="top">
+          <div class="avs"><span class="av aud"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span><img class="av me" src="img/srishti.png" alt=""></div>
+          <div class="who"><b>audience × srishti</b><span>through Shaya · 9 conversations</span></div>
+        </div>
+        <div class="msgs" id="msgs"></div>
+        <a class="compose" href="#hire" aria-label="Tell me what your audience is feeling. Go to Hire me"><span class="ph">Tell me what your audience is feeling…</span><span class="send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="collections">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Liner notes · the collections</div><h2>Collections <span class="serif">I wrote for</span></h2></div>
+        <p>Three launches, one line from each.</p>
+      </div>
+      <div class="stories" id="stories"></div>
+      <div class="pp">
+        <div><span class="eyebrow">Every day</span><b>Product names &amp; descriptions</b><p>Written for the website, app, CRM and store.</p></div>
+        <a class="btn ghost" href="https://www.shayabycaratlane.com/collections/silver/" target="_blank" rel="noopener">Browse the catalogue ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="grid">
+          <div class="pic"><div class="dots"></div><img src="img/srishti.png" alt="Srishti Sharma" width="698" height="959" loading="lazy"></div>
+          <div>
+            <div class="eyebrow">About the artist</div>
+            <h2>Hi, I’m <span class="serif">Srishti.</span></h2>
+            <p>I’ve always been curious about why one brand stays with you and another doesn’t. What someone is really reaching for when they pick something up, and how it feels to hold it.</p>
+            <p>I’m a brand and content marketer in Mumbai, with two years across jewellery retail and agetech. My favourite part of the job comes before the post: understanding how someone thinks, then building the words and visuals that meet them there.</p>
+            <div class="genres"><span>Brand marketing</span><span>Social media marketing</span><span>Content strategy</span><span>Copywriting</span><span>Brand voice</span><span>Integrated campaigns</span><span>Product launches</span><span>Shoot direction</span><span>Community</span><span>SEO</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="tour">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Tour dates</div><h2>On <span class="serif">tour</span></h2></div>
+        <p>Every stop so far, newest first.</p>
+      </div>
+      <div class="dates">
+        <div class="date now"><div class="when"><b>Feb 2026</b><span>to now</span></div><div class="what"><span class="venue">Shaya by CaratLane</span><b>Content Executive</b><p>Runs @shayagrams end to end. Campaign concepts and copy across social, website, app, CRM and retail.</p></div><div class="city">Mumbai</div><span class="status">Now playing</span></div>
+        <div class="date"><div class="when"><b>May 2025</b><span>to Jan 2026</span></div><div class="what"><span class="venue">Khyaal</span><b>Content Creator &amp; Community Growth</b><p>Jury and partnerships for 50 Above 50, testimonials with 40+ leaders, production and YouTube growth.</p></div><div class="city">Mumbai</div><span class="status">Played</span></div>
+        <div class="date"><div class="when"><b>2024</b><span>internship</span></div><div class="what"><span class="venue">Patanjali Ayurved</span><b>Digital Marketing Intern</b><p>Google Business listings and content gap analysis. Local visibility up 35%.</p></div><div class="city">Haridwar</div><span class="status">Played</span></div>
+        <div class="date"><div class="when"><b>2024</b><span>internship</span></div><div class="what"><span class="venue">Brainex Media</span><b>SEO Intern</b><p>SEO audits and on-page content. Organic traffic up 30%.</p></div><div class="city">Bangalore</div><span class="status">Played</span></div>
+        <div class="date"><div class="when"><b>2022</b><span>to 2025</span></div><div class="what"><span class="venue">Christ University</span><b>BBA (Hons)</b><p>Where the curiosity about brands and people started.</p></div><div class="city">Bangalore</div><span class="status">Soundcheck</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="hire">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Plans</div><h2>Pick your <span class="serif">plan.</span></h2></div>
+        <p>Tell me what you’re building and what you want from your brand and socials. I’ll come back with how I’d approach it.</p>
+      </div>
+      <div class="plans" id="plans"></div>
+      <div class="contact" id="contact">
+        <div><div class="eyebrow">Email</div><div class="v" id="em">sharmasrishti2909@gmail.com</div><button class="chipbtn" id="copyEm">Copy email</button></div>
+        <div><div class="eyebrow">LinkedIn</div><div class="v">linkedin.com/in/sharmasrishti2909</div><a class="chipbtn" href="https://www.linkedin.com/in/sharmasrishti2909" target="_blank" rel="noopener">Open LinkedIn ↗</a></div>
+        <div><div class="eyebrow">Also on</div><div class="v">Upwork · Contra</div><span style="font-size:13px;color:var(--grey)">Search “Srishti Sharma”</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>Srishti Sharma · brand, content &amp; copy · Mumbai</span><span>Work shown was made for Shaya by CaratLane and Khyaal.</span></div></footer>
+
+<div class="np off" id="np"></div>
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-label="Details"><div class="in" id="sheetIn"></div></div>
+
+<script>
+const IC = {
+  play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg>',
+  pause:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>',
+  prev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m15 5-7 7 7 7"/></svg>',
+  next:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m9 5 7 7-7 7"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 12 5 5 9-10"/></svg>'
+};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = n => !n ? '' : n>=1e6 ? (n/1e6).toFixed(1).replace(/\.0$/,'')+'M' : n>=1e3 ? (Math.round(n/100)/10+'').replace(/\.0$/,'')+'K' : n+'';
+
+/* credits placeholders until real ones arrive */
+const CR = {
+  post:['Concept','Copy','Shoot direction','Strategy'],
+  text:['Words','Audience insight','Emotional strategy'],
+  trend:['Idea','Shoot direction','Copy','Strategy'],
+  collab:['Brief','Copy','Strategy']
+};
+
+const ALBUMS = [
+  {id:'pichwai', title:'Pichwai', kind:'Launch campaign', year:'2026', brand:'Shaya', cover:{img:'c-pw-lotus.jpg'}, grid:'g-pichwai.jpg',
+   blurb:'A silver collection drawn from Pichwai, the temple painting tradition of Nathdwara. The goal for launch week was to take people who had never met Shaya from a passing scroll all the way to the brand.'},
+  {id:'wedding', title:'Wedding Season', kind:'Campaign', year:'2026', brand:'Shaya', cover:{img:'c-wd-film.jpg'}, grid:'g-wedding.jpg',
+   blurb:'Shaya For Weddings launched with a film about love that arrives when you’re ready. From there, the season followed real wedding moments: the bride, her squad, the haldi, the unboxing. The Grand Silver Sale rode on those feelings instead of shouting over them.'},
+  {id:'everyday', title:'Everyday Rotation', kind:'Always-on content', year:'2026', brand:'Shaya', cover:{img:'c-roses.jpg'}, grid:'g-everyday.jpg',
+   blurb:'The weekly rhythm between campaigns. Styling reels, product close-ups and voice-led posts that keep a 500K account alive and recognisably Shaya.'},
+  {id:'text', title:'Words on a Feed', kind:'Text posts', year:'2026', brand:'Shaya', cover:{img:'c-feminine.jpg'},
+   blurb:'Every line here is mine. Each one started with listening: what our audience was going through that week, and what she’d want someone to say out loud. Then I chose the feeling the post should leave behind, whether that’s being seen, backed or simply understood. No product in the frame. The brand earns its place by putting her thoughts into words.'},
+  {id:'trends', title:'Trend Edits', kind:'Trend-led content', year:'2026', brand:'Shaya', cover:{img:'c-staff.jpg'},
+   blurb:'Store staff, the office team and creators, dropped into formats already moving on the platform. Fast to make, still on brand.'},
+  {id:'matsya', title:'Matsya', kind:'Collection', year:'2026', brand:'Shaya', cover:{img:'c-matsya.jpg'}, grid:'g-matsya.jpg',
+   blurb:'Matsya, the fish that moves with the current. Silver and plique-à-jour enamel in blue, purple and turquoise, for the woman who moves through uncertainty with grace. The posts carried it as one story: teasers about flow and resilience, a look at how each piece is made, and the campaign itself.'},
+  {id:'khyaal', title:'50 Above 50', kind:'Influencer & content marketing', year:'2025', brand:'Khyaal', cover:{img:'c-khyaal.jpg'},
+   blurb:'India’s biggest talent hunt for people over 50, run by Khyaal across 50 categories and closing with a two-day celebration at NESCO, Mumbai in November 2025. I worked on the people side: the jury, the partners and the stories.'},
+  {id:'early', title:'Early Singles', kind:'Internships', year:'2024', brand:'SEO & digital', cover:{text:'early releases', grad:'linear-gradient(150deg,#6e0a0e,#1c0203)'},
+   blurb:'Where it started. Two internships in search and local discovery, and a habit of checking what the numbers actually say.'}
+];
+const ALB = Object.fromEntries(ALBUMS.map(a=>[a.id,a]));
+
+const T = [
+  {id:'sale', ig:'https://www.instagram.com/p/DWlx-aWCEaY/', a:'wedding', t:'Jewellery made for the day you’d always want to go back to', type:'Static', v:537000, likes:'10K', shares:'3,599', cover:'c-sale.jpg', proof:'p-sale.jpg', cr:['Idea','Copy','Strategy'],
+   note:'A single still for the Grand Silver Sale. The caption sells a memory before it sells a discount, and 3,596 shares say people sent it to someone they were buying for.'},
+  {id:'aurat', ig:'https://www.instagram.com/p/DV0uE3sjyY8/', a:'text', t:'Be your own pasandeeda aurat', type:'Text post', v:96600, likes:'3,475', shares:'547', cover:'c-aurat.jpg', proof:'p-aurat.jpg', cr:['Community','Strategy'], only:'hits',
+   note:'One of the most shared text posts on the account, with 3,475 likes and 547 shares. The words came from the team; I planned where it sat in the feed, published it and looked after the conversation that followed.'},
+  {id:'designer', ig:'https://www.instagram.com/p/Da2j7ZEiGEh/', a:'everyday', t:'Ever wondered how a designer’s mind works?', type:'Carousel', v:70100, likes:'934', shares:'142', cover:'c-designer.jpg', proof:'p-designer.jpg', cr:['Designer','Concept','Copy','Strategy'],
+   note:'“What you saw / what we saw.” Each slide pairs a finished piece with the painting it came from, so the design process becomes the hook.'},
+  {id:'bigday', ig:'https://www.instagram.com/p/DWqxoAxCOLr/', a:'wedding', t:'Here’s a little inspo for your big day', type:'Carousel', v:87100, likes:'1,157', shares:'265', cover:'c-bigday.jpg', proof:'p-bigday.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Are you saving this for yourself or sending it to your partner?',
+   note:'A caption written to be shared, and 265 people did.'},
+  {id:'pov', a:'wedding', t:'POV: You are smiling for the camera', type:'Carousel', v:66100, likes:'489', shares:'140', cover:'c-pov.jpg', proof:'p-pov.jpg', cr:['Idea','Copy','Strategy'], ig:'https://www.instagram.com/p/DW0woOZiNN1/',
+   lines:'POV: You are smiling for the camera but you are actually thinking about all the food you’ll be eating.',
+   note:'“…but you are actually thinking about all the food you’ll be eating.” A bridal portrait turned into a joke every bride gets, with the full look listed piece by piece below. 66.1K views, 140 shares, and a comment section full of people asking for the price.'},
+  {id:'guldasta', ig:'https://www.instagram.com/p/DWOd0PhDxTA/', goal:'Revenue growth', a:'everyday', t:'Chocolate, flowers or jewellery? All three', type:'Carousel', v:114000, likes:'892', shares:'30', cover:'c-guldasta.jpg', proof:'p-guldasta.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'We couldn’t pick between chocolate, flowers, or jewellery for you. So… we didn’t. We said all three.',
+   note:'A gifting post built to sell. The Guldasta pendant sits on a bar of chocolate, and the caption makes the case for buying all three.'},
+  {id:'sisters', ig:'https://www.instagram.com/p/DW3rZNxCJPD/', goal:'Emotion + sales', a:'wedding', t:'She grew up wanting her jewellery', type:'Carousel', v:52100, likes:'476', shares:'65', cover:'c-sisters.jpg', proof:'p-sisters.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'She grew up wanting her clothes and her jewellery. On the day she’s getting married, she…',
+   note:'A sister’s story that leads into the bridal pieces. The feeling comes first and the product follows, and 65 people sent it on.'},
+  {id:'care', ig:'https://www.instagram.com/p/DXZIlIRiFMS/', goal:'Informational', a:'everyday', t:'Silver jewellery care tips', type:'Carousel', v:0, cover:'c-care.jpg', proof:'p-care.jpg', cr:['Idea','Copy','Strategy'],
+   note:'A save-worthy carousel on keeping silver looking new. Useful content that answers a question customers ask in store and in the DMs.'},
+  {id:'moms', ig:'https://www.instagram.com/p/DYKBKYziD4E/', goal:'Employee-led', a:'everyday', t:'The best advice our moms have given us', type:'Carousel', v:0, cover:'c-moms.jpg', proof:'p-moms.jpg', cr:['Idea','Copy','Strategy'],
+   note:'Mother’s Day told through the team’s own mothers. Real photos and real advice from the people behind Shaya.'},
+  {id:'lotusstory', ig:'https://www.instagram.com/p/DbCzcD8CPjp/', goal:'Storytelling: one piece', a:'everyday', t:'The lotus that blooms on its own terms', type:'Carousel', v:56600, likes:'235', shares:'31', cover:'c-lotusstory.jpg', proof:'p-lotusstory.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'When we were designing this necklace, we didn’t want a clean, basic lotus flower. We wanted it to feel like a real lotus pond, super detailed and raw.',
+   note:'A whole carousel about one piece, the Oxidised Rise Above Neglect Necklace. Each slide unpacks a detail: Rava work that makes the silver beads look like morning dew, leaves folded by hand so they aren’t flat, and pear-shaped ruby buds for colour. It ends on the feeling behind it: we all bloom on our own terms.'},
+  {id:'unboxing', ig:'https://www.instagram.com/reel/Db2-LCuCos3/', goal:'Unboxing (ASMR)', a:'everyday', t:'Unboxing the ultimate Rakhi surprise', type:'Reel', v:35200, likes:'148', shares:'71', cover:'c-unboxing.jpg', proof:'p-unboxing.jpg', cr:['Idea','Copy','Strategy'],
+   note:'Slow hands, soft sounds and a butterfly ring in a cotton pouch. An ASMR unboxing for Rakhi that 71 people shared with their siblings.'},
+  {id:'bts', ig:'https://www.instagram.com/p/DcqkRT7CGwN/', goal:'BTS · horizontal', a:'matsya', t:'The process vs. the art', type:'Carousel', v:134000, likes:'574', shares:'84', cover:'c-bts.jpg', proof:'p-bts.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'From a vision in the studio to the final flow. Catching the perfect light for a collection designed to move with you.',
+   note:'Behind the scenes next to the final shot, side by side. An experiment with a horizontal format on a vertical-first platform, and one of the strongest Matsya posts at 134K views.'},
+  {id:'feminine', ig:'https://www.instagram.com/p/DdQUb6Rodbc/', a:'text', t:'Maybe being feminine was never about being delicate', type:'Text post', v:45400, likes:'487', shares:'53', cover:'c-feminine.jpg', proof:'p-feminine.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Maybe being feminine was never about being delicate. Or did we forget that soft and strong were never opposites?',
+   note:'Written for the Shakti collection. The aim was quiet defiance: let her feel her strength was always there, without shouting it.'},
+  {id:'difficult', goal:'Text post', ig:'https://www.instagram.com/p/DZmGNyGCBoi/', a:'text', t:'Sometimes being called “difficult”', type:'Text post', v:30100, shares:'103', likes:'567', cover:'c-difficult.jpg', proof:'p-difficult.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Sometimes being called “difficult” just means you finally started saying no. If your boundaries make them uncomfortable, that’s on them.',
+   note:'Permission, said plainly. The post gives her the line she wished she’d said, which is why it travelled.'},
+  {id:'outgrow', ig:'https://www.instagram.com/p/DZMZFV3FHDC/', a:'text', t:'Hey you, it’s okay to outgrow it', type:'Text post', v:29700, likes:'461', shares:'75', cover:'c-outgrow.jpg', proof:'p-outgrow.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Hey you, it’s okay if something that once felt right doesn’t anymore. You are allowed to outgrow it. You can choose what’s right for you now.',
+   note:'Written like a note from a friend. The feeling to leave behind was relief.'},
+  {id:'rakhitext', a:'text', t:'Your biggest critic is also your biggest supporter', type:'Text post', v:44000, likes:'386', shares:'113', cover:'c-rakhitext.jpg', proof:'p-rakhitext.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Rakhi is just an annual reminder that your biggest critic is also your biggest supporter.',
+   note:'A festival post without the festival clichés. One honest line about siblings that people tag theirs in.'},
+  {id:'nonchalant', ig:'https://www.instagram.com/p/Da5U-3hIr3e/', a:'text', t:'Being nonchalant is sooo boring', type:'Text post', v:32200, likes:'349', shares:'42', cover:'c-nonchalant.jpg', proof:'p-nonchalant.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Being nonchalant is sooo boring. Bring on the excitement over a good cup of coffee, the dramatic sunset appreciation, and romanticizing a random Tuesday evening walk.',
+   note:'A playful pushback on “too cool to care”. Light, warm, and very on-voice for a brand about little joys.'},
+  {id:'nobody', ig:'https://www.instagram.com/p/DWoLJZBCH0J/', a:'text', t:'Nobody tells you what marrying when you’re ready means', type:'Text post', v:36200, likes:'323', shares:'45', cover:'c-nobody.jpg', proof:'p-nobody.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Nobody tells you what marrying when you’re ready actually means. It means you already know who you are, before you figure out who you are with someone.',
+   note:'A wedding post with no jewellery in it, written for the bride who is taking her time.'},
+  {id:'therapy', ig:'https://www.instagram.com/p/DWBrmouiNxS/', a:'text', t:'Buying myself new things is my therapy', type:'Text post', v:26100, likes:'296', shares:'29', cover:'c-therapy.jpg', proof:'p-therapy.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Buying myself new things is my therapy. Therapist says it’s not healthy. But the jewellery disagrees.',
+   note:'Humour as the hook. Self-gifting, said the way she’d say it to a friend.'},
+  {id:'papa', ig:'https://www.instagram.com/p/DZ1oPKJiLr9/', a:'text', t:'Papa doesn’t really say “I love you”', type:'Text post', v:37900, likes:'252', shares:'26', cover:'c-papa.jpg', proof:'p-papa.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Papa doesn’t really say “I love you.” But he will ask if you’ve eaten, check your car’s tire pressure, and tell you to text when you reach.',
+   note:'Father’s Day, built to be forwarded. The caption asks her to send it to her dad.'},
+  {id:'energy', a:'text', t:'Some women just have that kind of energy', type:'Text post', v:20500, likes:'248', shares:'54', cover:'c-energy.jpg', proof:'p-energy.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Some women just have that kind of energy, the kind that makes you feel looked after. They’ll remind you to not skip breakfast, tell you to sleep on time, and save the last piece for you.',
+   note:'Mother’s Day, widened to every woman who mothers us. Specific details so everyone pictures their own person.'},
+  {id:'hype', a:'text', t:'Women look out for each other', type:'Text post', v:29000, likes:'211', shares:'7', cover:'c-hype.jpg', proof:'p-hype.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Honestly? Some of the best hype we’ve ever received came from a woman we barely knew. A stranger in a bathroom. A comment on a post. Women look out for each other. We always have.',
+   note:'A shared, very real moment turned into a line about solidarity.'},
+  {id:'mirror', ig:'https://www.instagram.com/p/DaCzthWCOVH/', a:'text', t:'Too complicated to love?', type:'Text post', v:20200, likes:'207', shares:'31', cover:'c-mirror.jpg', proof:'p-mirror.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Funny how we can stare at a piece of art for hours trying to understand its depth, but we look in the mirror and decide we’re too complicated to love.',
+   note:'Ties the craft of Pichwai to self-worth. The caption brings it home: you are intricate, layered and one of a kind.'},
+  {id:'fins', ig:'https://www.instagram.com/p/DahWQy3CBSm/', a:'text', t:'Trust your own fins', type:'Text post', v:22300, likes:'194', shares:'33', cover:'c-fins.jpg', proof:'p-fins.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'You don’t need to put your guards up just because things are uncertain. Resisting the change is what’s making you tired. Take a deep breath. Trust your own fins and flow through life like you own it.',
+   note:'A Matsya teaser written as a gentle reminder. The collection’s idea of moving with the current, before the product was revealed.'},
+  {id:'nikita', a:'text', t:'Nikita knew what she wanted', type:'Text post', v:31600, likes:'115', shares:'17', cover:'c-nikita.jpg', proof:'p-nikita.jpg', cr:['Words','Audience insight','Emotional strategy'],
+   lines:'Nikita doesn’t have a deadline. She doesn’t have a checklist. Just her, knowing what she wants, waiting until she found it.',
+   note:'A character-led teaser for the wedding launch. It set up the story before the reveal.'},
+  {id:'m-glide', ig:'https://www.instagram.com/p/Daki_6jFAal/', a:'matsya', t:'Gliding through it instead', type:'Carousel', v:33000, likes:'269', shares:'50', cover:'c-m-glide.jpg', proof:'p-m-glide.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Swimming against the current is exhausting. We highly recommend just gliding through it instead.',
+   note:'The full set on blue silk, with a caption that carries the collection’s idea in one light line.'},
+  {id:'m-launch', ig:'https://www.instagram.com/reel/DakDm8liHU0/', a:'matsya', t:'The wait is officially over', type:'Launch reel', v:21000, likes:'243', shares:'45', cover:'c-m-launch.jpg', proof:'p-m-launch.jpg', cr:['Copy','Strategy'],
+   lines:'This collection is our ode to the woman who moves through life’s uncertainties with an effortless grace. You were never meant to fight the current. You were meant to rule it.',
+   note:'The launch film, made with @tashipedy. It drew 70 comments, the most conversation of any Matsya post.'},
+  {id:'m-lines', ig:'https://www.instagram.com/reel/DapIJIjtQ_G/', a:'matsya', t:'How we bring these lines to life', type:'Reel', v:28400, likes:'204', shares:'32', cover:'c-m-lines.jpg', proof:'p-m-lines.jpg', cr:['Idea','Copy','Strategy'],
+   note:'A macro look at purple enamel being laid between silver lines. Craft content that makes the price feel earned.'},
+  {id:'m-tide', ig:'https://www.instagram.com/p/DaxbmF3lL8p/', a:'matsya', t:'You don’t have to fight the tide', type:'Carousel', v:31500, likes:'191', shares:'28', cover:'c-m-tide.jpg', proof:'p-m-tide.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'You don’t have to fight the tide to survive it. Sometimes, the most powerful thing you can do is stop resisting and just let your momentum carry you forward.',
+   note:'A product still paired with a line about letting go, keeping the product and the message moving together.'},
+  {id:'m-trustfins', ig:'https://www.instagram.com/p/Da0EsjziOsD/', a:'matsya', t:'Trust your own fins', type:'Carousel', v:31800, likes:'176', shares:'34', cover:'c-m-trustfins.jpg', proof:'p-m-trustfins.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'These 925 silver pieces are a beautiful reminder to just take a deep breath and trust your own fins.',
+   note:'Necklace, earrings and bracelet laid out as one story, with a caption that ties the fish motif to self-trust.'},
+  {id:'m-sketch', ig:'https://www.instagram.com/p/DapqXv9CBh7/', a:'matsya', t:'From a digital sketch to a campaign shoot', type:'Carousel', v:25500, likes:'132', shares:'5', cover:'c-m-sketch.jpg', proof:'p-m-sketch.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Honestly, seeing these pieces go from a digital sketch to a full campaign shoot never gets old.',
+   note:'Campaign imagery introduced in a personal, behind-the-brand voice.'},
+  {id:'pw-human', ig:'https://www.instagram.com/reel/DZzndtAtRGa/', a:'pichwai', t:'Behind every beautiful piece is a human story', type:'Reel', v:79600, likes:'374', shares:'42', cover:'c-pw-human.jpg', proof:'p-pw-human.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Behind every beautiful piece is a human story, years of dedication, and a heart full of passion.',
+   note:'The lotus ring, held up close so the hand-applied enamel shows. Craft and the people behind it, told in one shot.'},
+  {id:'pw-rings', ig:'https://www.instagram.com/p/DZud19siNL6/', a:'pichwai', t:'Which piece seems like your vibe?', type:'Carousel', v:42000, likes:'269', shares:'38', cover:'c-pw-rings.jpg', proof:'p-pw-rings.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Here’s a closer look at our new Pichwai-inspired silver rings. Which piece seems like your vibe?',
+   note:'Three rings set against a sketch of Udaipur’s palaces. The question in the caption turns a product post into a conversation.'},
+  {id:'pw-zoom', ig:'https://www.instagram.com/p/DZwZ_m3D9Sc/', a:'pichwai', t:'We had to zoom in on these pieces', type:'Carousel', v:39700, likes:'230', shares:'21', cover:'c-pw-zoom.jpg', proof:'p-pw-zoom.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'We had to zoom in on these pieces because a quick glance honestly doesn’t do them justice.',
+   note:'A full look, then close-ups on every hand-carved detail.'},
+  {id:'pw-film', ig:'https://www.instagram.com/reel/DZt34e_iCb_/', a:'pichwai', t:'Was art ever meant to stay still?', type:'Launch film', v:20500, likes:'205', shares:'37', cover:'c-pw-film.jpg', proof:'p-pw-film.jpg', cr:['Copy','Strategy'],
+   lines:'Was art ever meant to stay still? For centuries, Pichwai Art has captured the soul of Nathdwara and Udaipur. What if these stories didn’t have to stay on a canvas?',
+   note:'The launch film and its story: taking a centuries-old art form off the canvas and into everyday life. It drew 29 comments, the most of the launch.'},
+  {id:'pw-diary', ig:'https://www.instagram.com/p/DZ4vWuaCAdR/', a:'pichwai', t:'A mini photo diary of our favourite rings', type:'Carousel', v:39200, likes:'194', shares:'11', cover:'c-pw-diary.jpg', proof:'p-pw-diary.jpg', cr:['Designer','Idea','Copy','Strategy'],
+   lines:'Proof that the everyday looks just a little bit dreamier when your hands are dressed up in art.',
+   note:'A camera-frame photo diary that invites people to swipe and pick a favourite in the comments.'},
+  {id:'pw-lotus', ig:'https://www.instagram.com/p/DZ_1aCViKIV/', a:'pichwai', t:'Lotus Motif', type:'Carousel', v:27300, likes:'191', shares:'34', cover:'c-pw-lotus.jpg', proof:'p-pw-lotus.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'We’ve reimagined the iconic lotus motifs from traditional Pichwai paintings and woven them into delicate 925 silver.',
+   note:'An explainer carousel that starts with the painting and ends with the jewellery, so people understand where each piece comes from.'},
+  {id:'pw-layer', ig:'https://www.instagram.com/p/DZ4KJjmiNEv/', a:'pichwai', t:'Layering up our favourite pieces', type:'Carousel', v:40500, likes:'163', shares:'18', cover:'c-pw-layer.jpg', proof:'p-pw-layer.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Layering up our favourite pieces from our latest Pichwai collection!',
+   note:'A styling post shot by Udaipur’s lake, showing how the pieces stack.'},
+  {id:'pw-lanes', ig:'https://www.instagram.com/reel/DZ9TX8OC_g0/', a:'pichwai', t:'The sun-kissed lanes of Udaipur', type:'Reel', v:16000, likes:'122', shares:'8', cover:'c-pw-lanes.jpg', proof:'p-pw-lanes.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'There is something about wandering through the narrow, sun-kissed lanes of Udaipur that makes you slow down.',
+   note:'A travel-diary reel that roots the collection in the city it came from.'},
+  {id:'pw-wall', ig:'https://www.instagram.com/reel/DZ6sVmEiXvL/', a:'pichwai', t:'Who says traditional art belongs on a wall?', type:'Reel', v:18500, likes:'114', shares:'18', cover:'c-pw-wall.jpg', proof:'p-pw-wall.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Who says traditional art belongs on a wall? So we reimagined centuries-old Pichwai motifs into sleek, everyday silver pieces you can actually wear out.',
+   note:'Campaign footage with a line that makes the collection’s whole idea in one question.'},
+  {id:'pw-postcards', ig:'https://www.instagram.com/reel/DZy_7iENJ5H/', a:'pichwai', t:'Postcards from Udaipur', type:'Reel', v:13700, likes:'86', shares:'6', cover:'c-pw-postcards.jpg', proof:'p-pw-postcards.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Sending you some postcards from Udaipur.',
+   note:'A place-led reel that opens the collection’s world, Pichwai walls and all.'},
+  {id:'wd-film', a:'wedding', t:'Introducing Shaya For Weddings', type:'Launch film', v:120000, likes:'2,472', shares:'185', cover:'c-wd-film.jpg', proof:'p-wd-film.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Love didn’t pass us by; it just waited for us to be ready for it. And it turns out, the late start… was actually the perfect timing.',
+   note:'The film that launched Shaya For Weddings, with 2,472 likes and 74 comments. The story of love arriving when you’re ready set the tone for the whole season.'},
+  {id:'wd-gulabo', a:'wedding', t:'That’s Gulabo', type:'Carousel', v:76000, likes:'953', shares:'90', cover:'c-wd-gulabo.jpg', proof:'p-wd-gulabo.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'You know that feeling when your jewellery just feels like you? That’s Gulabo.',
+   note:'The rose-bud Gulabo set on a banana leaf, paired with the Grand Silver Sale offer. A product post that sold the feeling first, with 40 comments.'},
+  {id:'wd-haldi', a:'wedding', t:'The way this bangle moves on haldi wale haath', type:'Reel', v:54500, likes:'835', shares:'379', cover:'c-wd-haldi.jpg', proof:'p-wd-haldi.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Okay but the way this bangle moves on haldi wale haath…',
+   note:'A kaleere-style bangle shot in motion. 379 shares, as brides sent it to their sisters and friends.'},
+  {id:'wd-squad', a:'wedding', t:'Behind every beautiful bride is a squad', type:'Carousel', v:53500, likes:'430', shares:'71', cover:'c-wd-squad.jpg', proof:'p-wd-squad.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Behind every beautiful bride is a squad even more beautiful. This is to the ones who fix your dupatta, hold your hand & cry before you do.',
+   note:'A wedding post written for the bride’s people, so the whole squad sees themselves in it.'},
+  {id:'wd-shaadi', a:'wedding', t:'Shaadi Squad, our first wedding collection', type:'Reel', v:33600, likes:'290', shares:'87', cover:'c-wd-shaadi.jpg', proof:'p-wd-shaadi.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'This one will always be special to us. Our first wedding collection, Shaadi Squad.',
+   note:'A look back at where Shaya’s wedding story started, bringing an older collection back into the conversation.'},
+  {id:'wd-ranjha', a:'wedding', t:'POV: unboxing your wedding jewellery', type:'Reel', v:32400, likes:'263', shares:'120', cover:'c-wd-ranjha.jpg', proof:'p-wd-ranjha.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'POV: You are unboxing your wedding jewellery and suddenly ‘Ranjha’ starts playing in your head.',
+   note:'A jhumka reel built on a feeling every bride knows, with a song cue that does half the work.'},
+  {id:'wd-choker', a:'wedding', t:'The kind of jewellery that makes the look', type:'Carousel', v:25500, likes:'128', shares:'20', cover:'c-wd-choker.jpg', proof:'p-wd-choker.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'The kind of jewellery that makes the whole wedding look come together.',
+   note:'A bridesmaid styling post, with every piece named in the caption so it shops easily.'},
+  {id:'tennis', ig:'https://www.instagram.com/reel/DWRCn-AAvh3/', a:'everyday', t:'The kind of bracelet you’d never want to take off', type:'Reel', v:82300, likes:'772', shares:'90', cover:'c-tennis.jpg', proof:'p-tennis.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'If you’ve been waiting for a sign, this is it. Get that tennis bracelet you’ve been wanting.',
+   note:'A close-up of the tennis bracelet clasp, with on-screen copy that makes it feel like an everyday essential. 31 comments, mostly people asking about it.'},
+  {id:'ev-shreya', ig:'https://www.instagram.com/p/Ddv9SusCMWx/', a:'everyday', t:'Shreya Ghoshal’s full look, decoded', type:'Carousel', v:40700, likes:'824', shares:'225', cover:'c-ev-shreya.jpg', proof:'p-ev-shreya.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'The number of “what jewellery is she wearing?” messages we got was unreal. So here it is, Shreya Ghoshal’s full look, decoded.',
+   note:'A follow-up built from the DMs. People kept asking what Shreya Ghoshal was wearing, so the post answered them piece by piece. 225 shares and 70 reposts.'},
+  {id:'ev-queen', ig:'https://www.instagram.com/reel/DWa2I8sAi_w/', a:'everyday', t:'The ‘Queen of Organising’ necklace', type:'Reel', v:65600, likes:'735', shares:'26', cover:'c-ev-queen.jpg', proof:'p-ev-queen.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'If you love looking put together, this ‘Queen of Organising’ necklace is 100% you.',
+   note:'A product name with a personality, sold to the woman who already sees herself in it.'},
+  {id:'ev-diaset', ig:'https://www.instagram.com/p/DXji2s3CCv-/', a:'everyday', t:'Which one are you adding to cart first?', type:'Carousel', v:174000, likes:'522', shares:'43', cover:'c-ev-diaset.jpg', proof:'p-ev-diaset.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Okay but can we talk about how stunning these pieces are? The rings, the necklace… all of it. Which one are you adding to cart first?',
+   note:'Shaya Diamonds on deep blue, with a caption that asks people to pick a favourite. 174K views.'},
+  {id:'ev-pendant', ig:'https://www.instagram.com/reel/DYHceepInCk/', a:'everyday', t:'Diamonds that feel like you picked them yourself', type:'Reel', v:89400, likes:'361', shares:'84', cover:'c-ev-pendant.jpg', proof:'p-ev-pendant.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Diamonds that feel like you picked them yourself.',
+   note:'A slow close-up of a leaf pendant, written to make diamonds feel personal rather than precious.'},
+  {id:'ev-raqs', ig:'https://www.instagram.com/p/DaczWfLCFu1/', a:'everyday', t:'Raqs Earcuff', type:'Carousel', v:44600, likes:'292', shares:'14', cover:'c-ev-raqs.jpg', proof:'p-ev-raqs.jpg', cr:['Designer','Idea','Copy','Strategy'],
+   lines:'Some pieces just hold a certain weight. The Raqs Earcuff draws its inspiration from Tibetan heritage, mixing deep-rooted history with a design that feels incredibly modern.',
+   note:'A single statement piece told through its heritage, shot moody and close.'},
+  {id:'ev-axe', ig:'https://www.instagram.com/p/DdOgWmBiChN/', a:'everyday', t:'Every piece in Shakti began somewhere like this', type:'Carousel', v:53300, likes:'269', shares:'20', cover:'c-ev-axe.jpg', proof:'p-ev-axe.jpg', cr:['Designer','Idea','Copy','Strategy'],
+   lines:'Every piece in Shakti began somewhere like this. Traditional Indian weapons, reshaped into something you can actually wear.',
+   note:'“What we saw / what you saw.” The axe that inspired the Shakti pendant, side by side with the finished piece.'},
+  {id:'ev-earcuff', ig:'https://www.instagram.com/p/DdL9fzECHw_/', a:'everyday', t:'Standing their ground', type:'Carousel', v:47500, likes:'251', shares:'38', cover:'c-ev-earcuff.jpg', proof:'p-ev-earcuff.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Women have been standing their ground for years without ever calling it a fight. This one is for every time you stood there fierce, soft and entirely on your own.',
+   note:'Shakti’s idea of quiet strength, carried by an ear cuff and a line about holding your ground.'},
+  {id:'ev-dagger', ig:'https://www.instagram.com/p/DdIukwDiIuk/', a:'everyday', t:'Women have been wearing armour for years', type:'Carousel', v:29600, likes:'176', shares:'14', cover:'c-ev-dagger.jpg', proof:'p-ev-dagger.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'Women have been wearing armour for years without calling it that. These 925 silver pieces are for them.',
+   note:'Shakti rings shot on a dagger hilt, so the jewellery literally becomes armour.'},
+  {id:'ev-statement', goal:'Experimenting with AI', a:'everyday', t:'Statement Earrings', type:'Reel', v:13400, likes:'63', shares:'12', cover:'c-ev-statement.jpg', proof:'p-ev-statement.jpg', cr:['Idea','Copy','Strategy'],
+   lines:'You’d be surprised how much a statement earring can say without you saying a word.',
+   note:'An experiment with AI-generated visuals: a painted, editorial portrait that puts a real Shaya earring at the centre.'},
+  {id:'dday', goal:'Wedding edit', ig:'https://www.instagram.com/p/DYpAiPiCO9I/', a:'wedding', t:'It’s the little details of the D day', type:'Carousel', v:93900, likes:'1,010', shares:'133', cover:'c-dday.jpg', proof:'p-dday.jpg', cr:['Idea','Copy','Strategy'],
+   note:'A warm couple frame doing what reach content should: seen by almost 94K people and loved by over a thousand.'},
+  {id:'staff', ig:'https://www.instagram.com/reel/DXokiEMgswE/', a:'trends', t:'Our store staff when you’re not taking care of your silver', type:'Reel', v:64300, cover:'c-staff.jpg', proof:'p-staff.jpg', cr:['Idea','Shoot direction','Copy','Strategy'],
+   note:'A trending format shot in-store with the real team. Useful care advice, delivered as a joke.'},
+  {id:'roses', ig:'https://www.instagram.com/reel/DX4DIZEhwVA/', a:'everyday', t:'A quiet Sunday and a bunch of roses for you', type:'Reel', v:176000, likes:'1,168', shares:'52', cover:'c-roses.jpg', proof:'p-roses.jpg', cr:CR.post,
+   note:'Slow, warm, three frames. No hard sell, just a mood the audience wanted to sit in.'},
+  {id:'matsya', ig:'https://www.instagram.com/p/DanGKFzjyM3/', a:'matsya', t:'Our favourite way to wear Matsya', type:'Carousel', v:42800, likes:'433', shares:'57', cover:'c-matsya.jpg', proof:'p-matsya.jpg', cr:['Idea','Copy','Strategy'],
+   note:'Stack the rings, let the statement earrings do the rest. A styling carousel that doubles as a how-to.'},
+
+  {id:'earring', goal:'Making of', ig:'https://www.instagram.com/reel/DasPKmPhKi4/', a:'matsya', t:'A little behind-the-scenes magic', type:'Reel', v:87400, likes:'607', shares:'103', cover:'c-earring.jpg', proof:'p-earring.jpg', cr:['Idea','Copy','Strategy'],
+   note:'A close look at the plique-à-jour enamelling behind the Matsya collection. Showing how a piece is made makes the price feel earned.'},
+  {id:'flowers', goal:'Premium, yet everyday', ig:'https://www.instagram.com/reel/DV0LZU0Ausl/', a:'everyday', t:'Alexa play, “I can buy myself flowers”', type:'Reel', v:80200, likes:'929', shares:'43', cover:'c-flowers.jpg', proof:'p-flowers.jpg', cr:['Idea','Copy','Strategy'],
+   note:'Self-gifting, framed as a feeling everyone already knows the song for.'},
+  {id:'ring', goal:'Styling + informational', ig:'https://www.instagram.com/p/DZxEZS0CMV4/', a:'pichwai', t:'A ring inspo, and a lil styling tip at the end', type:'Carousel', v:79500, likes:'532', shares:'79', cover:'c-ring.jpg', proof:'p-ring.jpg', cr:['Idea','Copy','Strategy'],
+   note:'A payoff on the last slide, so people swipe to the end.'},
+  {id:'mood', goal:'Trend-based', ig:'https://www.instagram.com/reel/DZKiXIIIid1/', a:'trends', t:'Sale: 1. Angry 2. Excited 3. Flirty', type:'Reel', v:48600, likes:'257', shares:'44', cover:'c-mood.jpg', proof:'p-mood.jpg', cr:CR.trend,
+   note:'“We definitely did not force them to do this.” The office team sells the sale teaser.'},
+  {id:'collab', a:'trends', t:'Take a closer look', type:'Collab', v:48300, likes:'331', shares:'56', cover:'c-collab.jpg', proof:'p-collab.jpg', cr:['Design','Copy','Strategy'], creator:'@nishriinparikh',
+   note:'A creator collab carousel showing how she styles the new silver pieces.'},
+  {id:'41m', a:'everyday', t:'The one that went everywhere', type:'Reel', v:41200000, cover:'c-41m.jpg', cr:CR.post,
+   note:'An everyday styling reel that crossed 41.2 million views.'},
+  {id:'298k', a:'everyday', t:'Girl, get your sparkle on', type:'Reel', v:298000, cover:'c-298k.jpg', cr:CR.post, note:'A bright styling reel for the everyday Shaya girl.'},
+
+
+  {id:'diamond', ig:'https://www.instagram.com/p/DWs37O5CJ4x/', a:'everyday', t:'Natural diamonds in 925 silver', type:'Static', v:150000, cover:'c-diamond.jpg', cr:CR.post, note:'A product hero for the wedding edit.'},
+
+
+
+
+
+
+  {id:'swim', a:'matsya', t:'Just keep swimming', type:'Text post', v:27400, likes:'245', shares:'44', cover:'c-swim.jpg', proof:'p-swim.jpg', cr:['Audience insight','Emotional strategy'],
+   lines:'Fish don’t fight the river. They move with it, not against it. That’s how you handle pressure too, not by resisting it, but by moving through it. Just keep swimming.',
+   note:'The collection’s idea, written as a text post for the teaser grid. It turned the fish motif into something she could hold on to.'},
+  {id:'jury', a:'khyaal', t:'Building the jury from scratch', type:'Influencer outreach & management', v:0, tc:{text:'40+ leaders', grad:'linear-gradient(150deg,#c0182a,#370403)'}, cr:['Scouting','Outreach','Coordination'], link:'https://www.50above50.com/judges-panel',
+   note:'Scouted and brought on senior leaders to judge the awards, then managed outreach, scheduling and deliverables with 40+ of them.'},
+  {id:'testimonials', a:'khyaal', t:'Managed 40+ testimonials, from brief to delivery', type:'Video series', v:0, tc:{text:'40+ on camera', grad:'linear-gradient(150deg,#c0182a,#370403)'}, cr:['Brief & content','Production & shoot lead','Rollout'],
+   watch:[{g:'On Instagram', items:[['Pt. Ronu Majumdar','https://www.instagram.com/reel/DPOmn6SjGU4/','184 likes'],['Vinita Agrawal','https://www.instagram.com/reel/DQBR951Ef8V/','121 likes'],['Sridhar Venkataraman','https://www.instagram.com/reel/DQHIF30jBsO/','116 likes'],['Mangesh Gawade','https://www.instagram.com/reel/DQemW-djKlV/','102 likes'],['Indira Sanjay Baikerikar','https://www.instagram.com/reel/DO_Hw5bjE_P/','87 likes'],['Janaki Sabesh','https://www.instagram.com/reel/DP1LHIWDA4Q/','60 likes'],['Yasmin Sait','https://www.instagram.com/reel/DQD178jkc__/','59 likes'],['Deepak Saini','https://www.instagram.com/reel/DQJ7aLjDImn/','44 likes']]},{g:'On YouTube', items:[['Philip Rodrigues','https://www.youtube.com/shorts/YGRLJMp2J-o'],['Nakul Shenoy','https://www.youtube.com/shorts/1StLmyje9QY']]}],
+   note:'A testimonial series with 40+ industry leaders, released in step with the initiative’s timeline so trust grew at every stage. I took it from brief to script to final cut, leading the shoots and production end to end, and brought campaign turnaround down by 20%.'},
+  {id:'yt', a:'khyaal', t:'Growing the YouTube channel', type:'YouTube', v:0, tc:{text:'watch time', grad:'linear-gradient(150deg,#c0182a,#1c0203)'}, cr:['Scheduling','Audience','Analysis'], channel:'https://www.youtube.com/@50aboveFifty',
+   note:'Scheduling, audience segmentation and a read of what held attention, to lift visibility and retention.'},
+  {id:'patanjali', a:'early', t:'Local search for Patanjali Ayurved', type:'Digital marketing', v:0, tc:{text:'+35%', grad:'linear-gradient(150deg,#6e0a0e,#060402)'}, cr:['Listings','Keyword research'],
+   note:'Haridwar, 2024. Optimised Google Business listings and ran content gap analysis. Local visibility up 35%.'},
+  {id:'brainex', a:'early', t:'SEO audits at Brainex Media', type:'SEO', v:0, tc:{text:'+30%', grad:'linear-gradient(150deg,#370403,#060402)'}, cr:['Audits','On-page copy'],
+   note:'Bangalore, 2024. Audited and reworked website content. Organic traffic up 30%.'},
+  {id:'growth', a:'everyday', t:'A small reel that recruits', type:'Reel', v:17629, likes:'100', shares:'11', proof:'p-insight.jpg', tc:{text:'19 follows', grad:'linear-gradient(150deg,#c0182a,#370403)'}, cr:CR.post, hide:true,
+   note:'17,629 views, 12,765 viewers and 19 new follows. Smaller numbers, but this is the post that turned viewers into followers.'}
+];
+const LK=t=>{const v=(t.likes||'0').replace(/,/g,'');return /k$/i.test(v)?parseFloat(v)*1000:(parseFloat(v)||0)};
+const BY = Object.fromEntries(T.map(t=>[t.id,t]));
+const HITS = ['bigday','designer','staff','roses','pov','sale','matsya','aurat'];
+
+function cov(t, cls=''){
+  if(t.cover) return `<img class="${cls}" src="img/${t.cover}" alt="" loading="lazy">`;
+  const c = t.tc || ALB[t.a].cover;
+  if(c.img) return `<img class="${cls}" src="img/${c.img}" alt="" loading="lazy">`;
+  return `<div class="tc ${cls}" style="background:${c.grad}" aria-hidden="true">${esc(c.text)}</div>`;
+}
+function albCov(a){ return a.cover.img ? `<img src="img/${a.cover.img}" alt="${esc(a.title)} cover" loading="lazy">` : `<div class="tc" style="background:${a.cover.grad}">${esc(a.cover.text)}</div>`; }
+function credits(t){
+  const who = t.creator ? `<span>Creator <b>${esc(t.creator)}</b></span>` : '';
+  return `<div class="credits"><div class="eyebrow">Credits</div><div class="cr">${t.cr.map(c=>`<span>${esc(c)} <b>Srishti</b></span>`).join('')}${who}</div></div>`;
+}
+function stats(t){
+  const s=[t.v?[fmt(t.v),'views']:0,t.likes?[t.likes,'likes']:0,t.shares?[t.shares,'shares']:0].filter(Boolean);
+  return s.length?`<div class="stats">${s.map(x=>`<div class="stat"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}</div>`:'';
+}
+function row(t,i,g){
+  const a=ALB[t.a];
+  const sub = (g || t.goal==='Experimenting with AI') && t.goal ? `<span class="goal">${esc(t.goal)}</span> ${t.goal===t.type?'':esc(t.type)}` : `${esc(a.brand)} · ${esc(a.title)}${t.creator?' · with '+esc(t.creator):''}`;
+  return `<button class="tr${state.cur===t.id?' on':''}" data-t="${t.id}"><span class="n">${i}</span>${cov(t)}<span style="min-width:0"><b>${esc(t.t)}</b><small>${sub}</small></span><span class="v">${t.v?fmt(t.v):''}</span><span class="f">${(g||['text','matsya','pichwai','wedding'].includes(t.a))?(t.likes?esc(t.likes)+' likes':''):esc(t.type)}</span></button>`;
+}
+
+
+/* ---------- stories ---------- */
+const state = {i:0, cur:HITS[0], playing:false, p:0};
+const DUR = 4500;
+function renderBars(){
+  document.getElementById('bars').innerHTML = HITS.map((id,i)=>`<button aria-label="Hit ${i+1}" data-hit="${i}" class="${i<state.i?'done':''}"><i ${i===state.i?'id="barNow"':''}></i></button>`).join('');
+}
+function renderStory(){
+  const t = BY[HITS[state.i]], a = ALB[t.a];
+  state.cur = t.id;
+  document.getElementById('story').innerHTML = `
+    <div class="phone frame4"><img class="bg" src="img/${t.proof}" alt="" aria-hidden="true"><img class="fg" src="img/${t.proof}" alt="Instagram post: ${esc(t.t)}"><button class="tap l" data-step="-1" aria-label="Previous"><span class="chev">${IC.prev}</span></button><button class="tap r" data-step="1" aria-label="Next"><span class="chev">${IC.next}</span></button></div>
+    <div class="info">
+      <span class="num">${String(state.i+1).padStart(2,'0')} / ${String(HITS.length).padStart(2,'0')} · ${esc(t.type)}</span>
+      <h3>${esc(t.t)}</h3>
+      <span class="albname">${esc(a.brand)} · ${esc(a.title)}${t.creator?' · with '+esc(t.creator):''}</span>
+      <p class="note">${esc(t.note)}</p>
+      ${stats(t)}
+      ${credits(t)}
+      ${t.ig?`<a class="btn blush" style="align-self:flex-start" href="${t.ig}" target="_blank" rel="noopener">View on Instagram ↗</a>`:''}
+      <div class="ctrl" id="ctrl">
+        <button class="cb" data-step="-1" aria-label="Previous hit">${IC.prev}<span>Prev</span></button>
+        <button class="cb mid" id="spp" aria-label="${state.playing?'Pause':'Play'}">${state.playing?IC.pause+'<span>Pause</span>':IC.play+'<span>Play</span>'}</button>
+        <button class="cb nxt" data-step="1" aria-label="Next hit"><span>Next</span>${IC.next}</button>
+      </div>
+    </div>`;
+  renderBars(); renderNP(); markRows();
+}
+function renderNP(){
+  const t = BY[state.cur], a = ALB[t.a];
+  document.getElementById('np').innerHTML = `${cov(t)}<button class="t" data-t="${t.id}"><b>${esc(t.t)}</b><span>Srishti · ${esc(a.title)}</span></button><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><button class="circ main" id="npp" aria-label="${state.playing?'Pause':'Play'}">${state.playing?IC.pause:IC.play}</button><span class="prog"><i id="npProg"></i></span>`;
+  document.body.classList.toggle('playing', state.playing);
+}
+function markRows(){ document.querySelectorAll('.tr').forEach(r=>r.classList.toggle('on', r.dataset.t===state.cur)); }
+function paint(){
+  const w = (state.p/DUR*100)+'%';
+  const b = document.getElementById('barNow'); if(b) b.style.width = w;
+  const n = document.getElementById('npProg'); if(n) n.style.width = w;
+}
+let last=0, raf=0;
+function loop(ts){
+  if(!state.playing) return;
+  if(last) state.p += ts-last; last = ts;
+  if(state.p>=DUR){ go(1); }
+  paint(); raf = requestAnimationFrame(loop);
+}
+function setPlay(on){
+  state.playing = on; last = 0; cancelAnimationFrame(raf);
+  if(on) raf = requestAnimationFrame(loop);
+  const s=document.getElementById('spp'); if(s){ s.innerHTML = on?IC.pause+'<span>Pause</span>':IC.play+'<span>Play</span>'; s.setAttribute('aria-label',on?'Pause':'Play'); }
+  renderNP(); paint();
+}
+function go(d){ state.i = (state.i+d+HITS.length)%HITS.length; state.p=0; renderStory(); paint(); }
+function jump(i){ state.i=i; state.p=0; renderStory(); paint(); }
+
+/* ---------- other sections ---------- */
+const ALLT=['flowers','guldasta','sisters','care','moms','dday','mood','difficult','ring','earring','lotusstory','unboxing','bts'].sort((a,b)=>LK(BY[b])-LK(BY[a]));
+document.getElementById('alltracks').innerHTML = ALLT.map((id,i)=>row(BY[id],i+1,true)).join('');
+document.getElementById('funnel').innerHTML = '<div class="eyebrow">Launch of the season · Pichwai, first nine days</div>' +
+  [['17M','views'],['93%','reach from non-followers'],['36K','profile visits'],['5K','bio link taps']].map((f,i)=>`${i?'<span class="arrow">→</span>':''}<div class="stat"><b>${f[0]}</b><span>${f[1]}</span></div>`).join('');
+document.getElementById('shelf').innerHTML = ALBUMS.map(a=>`<button class="alb" data-alb="${a.id}"><div class="sleeve"><span class="vinyl"></span>${albCov(a)}</div><b>${esc(a.title)}</b><span>${a.year} · ${esc(a.brand)} · ${esc(a.kind)}</span></button>`).join('');
+
+
+const STORIES=[
+ {id:'matsya',name:'Matsya',imgs:['c-matsya.jpg','c-m-tide.jpg','c-m-launch.jpg'],
+  spark:'The fish, and the fins that steer it without force. Plique-à-jour enamel in blue, purple and turquoise.',
+  idea:'Matsya, Sanskrit for fish. Written for the woman who moves through uncertainty with grace instead of fighting it.',
+  line:'You were never meant to fight the current. You were meant to rule it.',
+  lived:['Launch film','Teaser text posts','Making-of reels','Campaign carousels']},
+ {id:'pichwai',name:'Pichwai',imgs:['c-pw-lotus.jpg','c-pw-rings.jpg','c-pw-layer.jpg'],
+  spark:'Pichwai, the temple paintings of Nathdwara and Udaipur, and the lotus at their centre.',
+  idea:'Named after the art form itself, with a story about letting these paintings leave the canvas and move through the world with you.',
+  line:'Was art ever meant to stay still?',
+  lived:['Launch film','Motif explainers','Udaipur reels','Styling carousels']},
+ {id:'shakti',name:'Shakti',imgs:['c-ev-axe.jpg','c-ev-dagger.jpg','c-ev-earcuff.jpg'],
+  spark:'Traditional Indian weapons, reshaped into pieces you can actually wear.',
+  idea:'Shakti, strength. A story about the quiet strength women have always carried, where soft and strong were never opposites.',
+  line:'Women have been wearing armour for years without calling it that.',
+  lived:['Inspiration carousels','Text posts','Campaign shoot']}
+];
+document.getElementById('stories').innerHTML=STORIES.map(c=>`<article class="cs">
+  <div class="strip">${c.imgs.map(i=>`<img src="img/${i}" alt="" loading="lazy">`).join('')}</div>
+  <div class="in">
+    <span class="eyebrow">Collection</span><h3>${c.name}</h3>
+    <blockquote>${esc(c.line)}</blockquote>
+    ${ALB[c.id]?`<button class="btn ghost" data-alb="${c.id}">Open the album</button>`:''}
+  </div></article>`).join('');
+
+const MSG = [
+  {k:'day', x:'What people told us · how I answered'},
+  {k:'in', x:'I keep getting called difficult just for saying no.'},
+  {k:'out', t:'difficult', tone:'Empowering'},
+  {k:'in', x:'Is it bad that something that felt right… just doesn’t anymore?'},
+  {k:'out', t:'outgrow', tone:'Emotional'},
+  {k:'in', x:'My dad has never once said “I love you”.'},
+  {k:'out', t:'papa', tone:'Emotional'},
+  {k:'in', x:'Everyone asks when I’m getting married. I’m not ready.'},
+  {k:'out', t:'nobody', tone:'Empowering'},
+  {k:'in', x:'Retail therapy is my only therapy rn.'},
+  {k:'out', t:'therapy', tone:'Sarcastic'},
+  {k:'in', x:'People say I’m too much. Too complicated.'},
+  {k:'out', t:'mirror', tone:'Emotional'},
+  {k:'in', x:'Getting excited over small things feels so cringe.'},
+  {k:'out', t:'nonchalant', tone:'Playful'},
+  {k:'in', x:'Is being soft a weakness?'},
+  {k:'out', t:'feminine', tone:'Empowering'},
+  {k:'in', x:'Everything keeps changing and I’m exhausted.'},
+  {k:'out', t:'fins', tone:'Reassuring'}
+];
+const AUD='<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>';
+const HEART='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>';
+document.getElementById('msgs').innerHTML = MSG.map(m=>{
+  if(m.k==='day') return `<span class="day">${esc(m.x)}</span>`;
+  if(m.t){ const t=BY[m.t]; return `<div class="row out"><span class="mav"></span><button class="msg out" data-t="${t.id}"><span class="tone">${esc(m.tone)}</span>${esc(t.lines)}${t.likes?`<span class="react">${HEART}${esc(t.likes)}</span>`:''}</button></div>${t.ig?`<a class="vlink" href="${t.ig}" target="_blank" rel="noopener">View on Instagram ↗</a>`:`<button class="vlink" data-t="${t.id}">View post ↗</button>`}`; }
+  return `<div class="row in"><span class="mav">${AUD}</span><div class="msg in">${esc(m.x)}</div></div>`;
+}).join('') + '<span class="seen">Seen by 511K</span><div class="typing" aria-label="typing"><i></i><i></i><i></i></div>';
+
+const PLANS = [
+  {tag:'Full time · open to roles', feat:1, h:'Brand & Marketing Roles', f:'For teams hiring for brand, content or social.',
+   li:['Two years across jewellery retail and agetech','Integrated campaigns from brief to launch','Product launches and go-to-market content','Consumer insight turned into content','Works across design, product and retail teams','Based in Mumbai'], c:'Talk about a role'},
+  {tag:'Freelance', h:'Social Media Management', f:'For brands and creators who want one person to own their Instagram.',
+   li:['An audit of where the account stands before anything changes','Content pillars built around your goal: growth, sales or recognition','A calendar that stays a month ahead','Shoots briefed and directed','Captions in your voice, posts out on time','Comments and DMs answered like a person','A monthly read of what moved and what changes next'], c:'Plan my Instagram'},
+  {tag:'Freelance', h:'Copywriting', f:'For brands that need to sound like someone worth knowing.',
+   li:['Collection stories and launch copy','Product names and descriptions that help people decide','Captions, carousels and text posts','Website, app, CRM, WhatsApp and retail copy','A written brand voice your team can keep'], c:'Get the words right'}
+];
+document.getElementById('plans').innerHTML = PLANS.map(p=>`<div class="plan${p.feat?' feat':''}"><h3>${esc(p.h)}</h3><p class="for">${esc(p.f)}</p><ul>${p.li.map(l=>`<li>${IC.check}<span>${esc(l)}</span></li>`).join('')}</ul><a class="btn ${p.feat?'blush':'ghost'}" href="#contact">${p.c}</a></div>`).join('');
+
+/* ---------- sheet ---------- */
+const stack=[];
+function openTrack(id){
+  const t=BY[id], a=ALB[t.a];
+  const sh=document.getElementById('sheet');
+  if(!sh.hidden && sh.dataset.alb) stack.push(sh.dataset.alb);
+  sh.dataset.alb='';
+  sheet(`<div class="sh-track"><div class="shot">${t.proof?`<div class="frame4"><img class="bg" src="img/${t.proof}" alt="" aria-hidden="true"><img class="fg" src="img/${t.proof}" alt="Instagram post: ${esc(t.t)}"></div>`:cov(t)}</div>
+    <div class="sh-body"><span class="eyebrow">${t.goal?esc(t.goal)+' · ':''}${esc(t.type)} · ${esc(a.title)}</span><h3>${esc(t.t)}</h3>
+    ${t.lines?`<div class="msg out" style="max-width:100%">${esc(t.lines)}</div>`:''}
+    <p>${esc(t.note)}</p>${stats(t)}${credits(t)}
+    ${t.watch?`<div class="watch">${t.watch.map(w=>`<div class="eyebrow">Watch ${esc(w.g.toLowerCase())}</div><div class="links2">${w.items.map(([n,u,l])=>`<a class="btn blush" href="${u}" target="_blank" rel="noopener"><span class="playic">${IC.play}</span>${esc(n)}${l?`<small class="lk">${esc(l)}</small>`:''}</a>`).join('')}</div>`).join('')}</div>`:''}
+    <div style="display:flex;gap:10px;flex-wrap:wrap">${t.ig?`<a class="btn blush" href="${t.ig}" target="_blank" rel="noopener">View on Instagram ↗</a>`:''}${t.link?`<a class="btn blush" href="${t.link}" target="_blank" rel="noopener">See the panel ↗</a>`:''}${t.channel?`<a class="btn blush" href="${t.channel}" target="_blank" rel="noopener">Visit the channel ↗</a>`:''} ${a.brand==='Shaya'&&!t.ig?`<a class="chipbtn" href="https://www.instagram.com/shayagrams/" target="_blank" rel="noopener">@shayagrams ↗</a>`:''}</div></div></div>`);
+}
+function openAlbum(id){
+  const a=ALB[id]; let list=T.filter(t=>t.a===id && !t.hide && !t.only);
+  if(['text','matsya','pichwai','wedding'].includes(id)){ list.sort((x,y)=>LK(y)-LK(x)); }
+  if(id==='everyday'){ const used=new Set([...HITS,...ALLT]); list=[...list.filter(t=>!used.has(t.id)),...list.filter(t=>used.has(t.id))];  { const pe=list.filter(t=>t.id==='ev-pendant'), lt=list.filter(t=>t.id==='298k'), r=list.filter(t=>t.id!=='ev-pendant'&&t.id!=='298k'); list=[...r.slice(0,-1),...pe,...r.slice(-1),...lt]; } }
+  document.getElementById('sheet').dataset.alb=id;
+  sheet(`<div class="sh-album"><div class="head">${albCov(a)}<div><span class="eyebrow">${esc(a.kind)} · ${a.year} · ${esc(a.brand)}</span><h3>${esc(a.title)}</h3><p>${esc(a.blurb)}</p></div></div>
+    <div class="body"><div class="tracks">${list.map((t,i)=>row(t,i+1)).join('')}</div>
+    ${a.grid?`<div class="grid"><div class="eyebrow" style="margin-top:22px">From the grid</div><img src="img/${a.grid}" alt="${esc(a.title)} on the Instagram grid" loading="lazy"></div>`:''}
+    ${id==='khyaal'?`<p style="margin-top:16px"><a class="btn blush" href="https://www.50above50.com/judges-panel" target="_blank" rel="noopener">See the panel ↗</a></p>`:''}</div></div>`);
+}
+let lastFocus=null;
+function sheet(html){
+  if(document.getElementById('sheet').hidden) lastFocus=document.activeElement;
+  document.getElementById('sheetIn').innerHTML = `<button class="circ x" data-close aria-label="Close">${IC.x}</button>`+html;
+  const s=document.getElementById('sheet'); s.hidden=false; document.getElementById('sheetIn').scrollTop=0; document.body.style.overflow='hidden'; s.querySelector('[data-close]').focus();
+}
+function closeSheet(){
+  if(stack.length){ openAlbum(stack.pop()); document.getElementById('sheetIn').scrollTop=0; return; }
+  document.getElementById('sheet').hidden=true; document.getElementById('sheet').dataset.alb=''; document.body.style.overflow=''; lastFocus&&lastFocus.focus&&lastFocus.focus(); }
+
+/* ---------- events ---------- */
+document.addEventListener('click', e=>{
+  const el = e.target.closest('[data-step],[data-hit],[data-t],[data-alb],[data-close],[data-go],#spp,#npp,#copyEm');
+  if(!el){ if(e.target.id==='sheet') closeSheet(); return; }
+  if(el.dataset.step){ go(+el.dataset.step); return; }
+  if(el.dataset.hit){ jump(+el.dataset.hit); return; }
+  if(el.id==='spp'||el.id==='npp'){ setPlay(!state.playing); return; }
+  if(el.dataset.go){ document.getElementById(el.dataset.go).scrollIntoView({behavior:'smooth'}); setPlay(true); return; }
+  if(el.hasAttribute('data-close')){ closeSheet(); return; }
+  if(el.dataset.t){ const i=HITS.indexOf(el.dataset.t); if(document.getElementById('sheet').hidden && i>=0 && el.closest('#np')){ document.getElementById('hits').scrollIntoView({behavior:'smooth'}); return; } openTrack(el.dataset.t); return; }
+  if(el.dataset.alb){ openAlbum(el.dataset.alb); return; }
+  if(el.id==='copyEm'){
+    const txt=document.getElementById('em').textContent;
+    const ok=()=>{el.textContent='Copied';setTimeout(()=>el.textContent='Copy email',1600)};
+    const fb=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('em'));const s=getSelection();s.removeAllRanges();s.addRange(r);el.textContent='Selected';};
+    try{navigator.clipboard.writeText(txt).then(ok,fb)}catch(_){fb()}
+  }
+});
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeSheet(); });
+
+
+
+renderStory();
+new IntersectionObserver(es=>{ es.forEach(x=>document.getElementById('np').classList.toggle('off', !x.isIntersecting)); },{threshold:.15}).observe(document.getElementById('hits'));
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io = new IntersectionObserver(es=>{ es.forEach(x=>{ if(x.isIntersecting && !state.started){ state.started=true; setPlay(true); } }); },{threshold:.4});
+  io.observe(document.getElementById('story'));
+}
+</script>
+
+</body></html>
