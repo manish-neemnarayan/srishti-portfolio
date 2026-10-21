@@ -99,6 +99,12 @@ section.s{padding-block:64px}
 .story .num{font:500 12px var(--mono);color:var(--grey);letter-spacing:.1em}
 .story h3{margin:0;font:700 clamp(26px,3vw,40px)/1.05 var(--display);letter-spacing:-.03em;color:#fff;text-wrap:balance}
 .story .albname{color:var(--sand);font-size:14px}
+.sg{display:grid;gap:12px;margin:0;max-width:56ch}
+.sg div{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:baseline}
+.sg dt{font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--blush2)}
+.sg dd{margin:0;color:var(--soft);font-size:15px;line-height:1.5}
+.sg div:first-child dd{color:#fff;font-weight:600}
+@media (max-width:560px){.sg div{grid-template-columns:1fr;gap:4px}}
 .story p.note{margin:0;color:var(--soft);max-width:52ch;font-size:16px}
 .credits{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:8px}
 .credits .eyebrow{margin-bottom:2px}
@@ -437,7 +443,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <a class="logo" href="#home">srishti<span class="serif">sharma</span></a>
     <div class="links">
-      <a href="#hits">Greatest hits</a><a href="#discography">Discography</a><a href="#words">Words</a><a href="#about">About</a><a href="#tour">Tour</a>
+      <a href="#hits">Greatest hits</a><a href="#words">Words</a><a href="#discography">Discography</a><a href="#about">About</a><a href="#tour">Tour</a>
     </div>
     <a class="btn blush" href="#hire">Hire me</a>
   </div>
@@ -466,21 +472,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </header>
 
 <main>
-  <section class="s" id="hits">
-    <div class="wrap">
-      <div class="sh">
-        <div><div class="eyebrow">Side A</div><h2>Greatest <span class="serif">hits</span></h2></div>
-        <p>Tap through like a story. Every piece lists exactly what I did on it.</p>
-      </div>
-      <div class="hitsbox" id="hitsbox">
-        <div class="barsrow"><div class="bars" id="bars"></div></div>
-        <div class="story" id="story"></div>
-      </div>
-      <div class="tl-head"><h3>All tracks</h3><span class="eyebrow">Each one made for a different goal</span></div>
-      <div class="tracks" id="alltracks"></div>
-    </div>
-  </section>
-
   <section class="s" id="wrapped">
     <div class="wrap">
       <div class="wrapped">
@@ -497,27 +488,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
   </section>
 
-  <section class="s" id="discography">
+  <section class="s" id="hits">
     <div class="wrap">
       <div class="sh">
-        <div><div class="eyebrow">Side B</div><h2>Discogra<span class="serif">phy</span></h2></div>
-        <p>Campaigns, collections and the work in between. Open one to see its tracks.</p>
+        <div><div class="eyebrow">Side A</div><h2>Greatest <span class="serif">hits</span></h2></div>
+        <p>Tap through like a story. Each one shows the goal, how the post got there and what it did.</p>
       </div>
-      <div class="shelf" id="shelf"></div>
-    </div>
-  </section>
-
-  <section class="s" id="featuring">
-    <div class="wrap">
-      <div class="sh">
-        <div><div class="eyebrow">Bonus tracks</div><h2>Featuring <span class="serif">Srishti</span></h2></div>
-        <p>Some briefs needed a face, so I stepped in front of the camera too.</p>
+      <div class="hitsbox" id="hitsbox">
+        <div class="barsrow"><div class="bars" id="bars"></div></div>
+        <div class="story" id="story"></div>
       </div>
-      <div class="feat">
-        <figure><a class="frame4" href="https://www.instagram.com/reel/DY9ot1bIQWu/" target="_blank" rel="noopener" aria-label="Watch Weekly elevated minimals on Instagram"><img class="bg" src="img/f-saturday.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-saturday.jpg" alt="Srishti styling earrings in a weekend reel" loading="lazy"></a><figcaption><div><b>Weekly elevated minimals</b><span>Styling reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
-        <figure><a class="frame4" href="https://www.instagram.com/reel/DZcaqdKtxw2/" target="_blank" rel="noopener" aria-label="Watch Everyday jewellery on Instagram"><img class="bg" src="img/f-ring.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-ring.jpg" alt="Srishti showing a ring" loading="lazy"></a><figcaption><div><b>Everyday jewellery</b><span>Product reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
-        <figure><a class="frame4" href="https://www.instagram.com/reel/DYCTGH0itAa/" target="_blank" rel="noopener" aria-label="Watch Still figuring out gifts for Maa? on Instagram"><img class="bg" src="img/f-maa.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-maa.jpg" alt="Srishti in a Mother’s Day gifting reel" loading="lazy"></a><figcaption><div><b>Still figuring out gifts for Maa?</b><span>Gifting reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
-      </div>
+      <div class="tl-head"><h3>All tracks</h3><span class="eyebrow">Each one made for a different goal</span></div>
+      <div class="tracks" id="alltracks"></div>
     </div>
   </section>
 
@@ -570,6 +552,30 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="pp">
         <div><span class="eyebrow">Every day</span><b>Product names &amp; descriptions</b><p>Written for the website, app, CRM and store.</p></div>
         <a class="btn ghost" href="https://www.shayabycaratlane.com/collections/silver/" target="_blank" rel="noopener">Browse the catalogue ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="discography">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Side B</div><h2>Discogra<span class="serif">phy</span></h2></div>
+        <p>Campaigns, collections and the work in between. Open one to see its tracks.</p>
+      </div>
+      <div class="shelf" id="shelf"></div>
+    </div>
+  </section>
+
+  <section class="s" id="featuring">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Bonus tracks</div><h2>Featuring <span class="serif">Srishti</span></h2></div>
+        <p>Some briefs needed a face, so I stepped in front of the camera too.</p>
+      </div>
+      <div class="feat">
+        <figure><a class="frame4" href="https://www.instagram.com/reel/DY9ot1bIQWu/" target="_blank" rel="noopener" aria-label="Watch Weekly elevated minimals on Instagram"><img class="bg" src="img/f-saturday.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-saturday.jpg" alt="Srishti styling earrings in a weekend reel" loading="lazy"></a><figcaption><div><b>Weekly elevated minimals</b><span>Styling reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
+        <figure><a class="frame4" href="https://www.instagram.com/reel/DZcaqdKtxw2/" target="_blank" rel="noopener" aria-label="Watch Everyday jewellery on Instagram"><img class="bg" src="img/f-ring.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-ring.jpg" alt="Srishti showing a ring" loading="lazy"></a><figcaption><div><b>Everyday jewellery</b><span>Product reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
+        <figure><a class="frame4" href="https://www.instagram.com/reel/DYCTGH0itAa/" target="_blank" rel="noopener" aria-label="Watch Still figuring out gifts for Maa? on Instagram"><img class="bg" src="img/f-maa.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="img/f-maa.jpg" alt="Srishti in a Mother’s Day gifting reel" loading="lazy"></a><figcaption><div><b>Still figuring out gifts for Maa?</b><span>Gifting reel · on camera</span></div><span class="figig">Watch on Instagram ↗</span></figcaption></figure>
       </div>
     </div>
   </section>
@@ -669,16 +675,16 @@ const ALBUMS = [
 const ALB = Object.fromEntries(ALBUMS.map(a=>[a.id,a]));
 
 const T = [
-  {id:'sale', ig:'https://www.instagram.com/p/DWlx-aWCEaY/', a:'wedding', t:'Jewellery made for the day you’d always want to go back to', type:'Static', v:537000, likes:'10K', shares:'3,599', cover:'c-sale.jpg', proof:'p-sale.jpg', cr:['Idea','Copy','Strategy'],
+  {id:'sale', sg:['Sell the Grand Silver Sale without leading with the discount.','One still and a caption that sells a memory first, “the day you’d always want to go back to”, and the offer second.','537K views, 10K likes and 3,599 shares, the most shared post in this portfolio.'], ig:'https://www.instagram.com/p/DWlx-aWCEaY/', a:'wedding', t:'Jewellery made for the day you’d always want to go back to', type:'Static', v:537000, likes:'10K', shares:'3,599', cover:'c-sale.jpg', proof:'p-sale.jpg', cr:['Idea','Copy','Strategy'],
    note:'A single still for the Grand Silver Sale. The caption sells a memory before it sells a discount, and 3,596 shares say people sent it to someone they were buying for.'},
-  {id:'aurat', ig:'https://www.instagram.com/p/DV0uE3sjyY8/', a:'text', t:'Be your own pasandeeda aurat', type:'Text post', v:96600, likes:'3,475', shares:'547', cover:'c-aurat.jpg', proof:'p-aurat.jpg', cr:['Community','Strategy'], only:'hits',
+  {id:'aurat', sg:['Build a community around what the brand stands for.','An empowering message in line with Shaya’s positioning, placed in the feed to speak to how women see themselves, then followed by real conversation in the comments.','3,475 likes and 547 shares, one of the most shared text posts on the account.'], ig:'https://www.instagram.com/p/DV0uE3sjyY8/', a:'text', t:'Be your own pasandeeda aurat', type:'Text post', v:96600, likes:'3,475', shares:'547', cover:'c-aurat.jpg', proof:'p-aurat.jpg', cr:['Community','Strategy'], only:'hits',
    note:'One of the most shared text posts on the account, with 3,475 likes and 547 shares. The words came from the team; I planned where it sat in the feed, published it and looked after the conversation that followed.'},
-  {id:'designer', ig:'https://www.instagram.com/p/Da2j7ZEiGEh/', a:'everyday', t:'Ever wondered how a designer’s mind works?', type:'Carousel', v:70100, likes:'934', shares:'142', cover:'c-designer.jpg', proof:'p-designer.jpg', cr:['Designer','Concept','Copy','Strategy'],
+  {id:'designer', sg:['Make the design itself the visual hook, so people swipe out of curiosity.','Paired every finished piece with the painting it came from, “what you saw / what we saw”. Each swipe reveals the art behind the design, so the visual pull does the work.','934 likes and 142 shares. People stayed for the art and passed it on.'], ig:'https://www.instagram.com/p/Da2j7ZEiGEh/', a:'everyday', t:'Ever wondered how a designer’s mind works?', type:'Carousel', v:70100, likes:'934', shares:'142', cover:'c-designer.jpg', proof:'p-designer.jpg', cr:['Designer','Concept','Copy','Strategy'],
    note:'“What you saw / what we saw.” Each slide pairs a finished piece with the painting it came from, so the design process becomes the hook.'},
-  {id:'bigday', ig:'https://www.instagram.com/p/DWqxoAxCOLr/', a:'wedding', t:'Here’s a little inspo for your big day', type:'Carousel', v:87100, likes:'1,157', shares:'265', cover:'c-bigday.jpg', proof:'p-bigday.jpg', cr:['Idea','Copy','Strategy'],
+  {id:'bigday', sg:['Get wedding looks saved and sent, not just liked.','Built the carousel as a ready reference and ended on one question: “Are you saving this for yourself or sending it to your partner?” Saving and sharing became the answer.','265 shares and 1,157 likes. The post travelled between couples planning their day.'], ig:'https://www.instagram.com/p/DWqxoAxCOLr/', a:'wedding', t:'Here’s a little inspo for your big day', type:'Carousel', v:87100, likes:'1,157', shares:'265', cover:'c-bigday.jpg', proof:'p-bigday.jpg', cr:['Idea','Copy','Strategy'],
    lines:'Are you saving this for yourself or sending it to your partner?',
    note:'A caption written to be shared, and 265 people did.'},
-  {id:'pov', a:'wedding', t:'POV: You are smiling for the camera', type:'Carousel', v:66100, likes:'489', shares:'140', cover:'c-pov.jpg', proof:'p-pov.jpg', cr:['Idea','Copy','Strategy'], ig:'https://www.instagram.com/p/DW0woOZiNN1/',
+  {id:'pov', sg:['Make bridal jewellery feel relatable, not untouchable.','Turned a bridal portrait into a joke every bride gets, then listed the full look piece by piece below, so the laugh leads straight to the product.','140 shares and a comment section full of people asking for the price.'], a:'wedding', t:'POV: You are smiling for the camera', type:'Carousel', v:66100, likes:'489', shares:'140', cover:'c-pov.jpg', proof:'p-pov.jpg', cr:['Idea','Copy','Strategy'], ig:'https://www.instagram.com/p/DW0woOZiNN1/',
    lines:'POV: You are smiling for the camera but you are actually thinking about all the food you’ll be eating.',
    note:'“…but you are actually thinking about all the food you’ll be eating.” A bridal portrait turned into a joke every bride gets, with the full look listed piece by piece below. 66.1K views, 140 shares, and a comment section full of people asking for the price.'},
   {id:'guldasta', ig:'https://www.instagram.com/p/DWOd0PhDxTA/', goal:'Revenue growth', a:'everyday', t:'Chocolate, flowers or jewellery? All three', type:'Carousel', v:114000, likes:'892', shares:'30', cover:'c-guldasta.jpg', proof:'p-guldasta.jpg', cr:['Idea','Copy','Strategy'],
@@ -838,11 +844,11 @@ const T = [
    note:'An experiment with AI-generated visuals: a painted, editorial portrait that puts a real Shaya earring at the centre.'},
   {id:'dday', goal:'Wedding edit', ig:'https://www.instagram.com/p/DYpAiPiCO9I/', a:'wedding', t:'It’s the little details of the D day', type:'Carousel', v:93900, likes:'1,010', shares:'133', cover:'c-dday.jpg', proof:'p-dday.jpg', cr:['Idea','Copy','Strategy'],
    note:'A warm couple frame doing what reach content should: seen by almost 94K people and loved by over a thousand.'},
-  {id:'staff', ig:'https://www.instagram.com/reel/DXokiEMgswE/', a:'trends', t:'Our store staff when you’re not taking care of your silver', type:'Reel', v:64300, cover:'c-staff.jpg', proof:'p-staff.jpg', cr:['Idea','Shoot direction','Copy','Strategy'],
+  {id:'staff', sg:['Teach silver care without it feeling like a care guide.','Took a trending reel format and shot it in store with the real staff, so the advice lands as a joke and puts faces to the stores.','64.3K views on a care tip, told by the people customers actually meet.'], ig:'https://www.instagram.com/reel/DXokiEMgswE/', a:'trends', t:'Our store staff when you’re not taking care of your silver', type:'Reel', v:64300, cover:'c-staff.jpg', proof:'p-staff.jpg', cr:['Idea','Shoot direction','Copy','Strategy'],
    note:'A trending format shot in-store with the real team. Useful care advice, delivered as a joke.'},
-  {id:'roses', ig:'https://www.instagram.com/reel/DX4DIZEhwVA/', a:'everyday', t:'A quiet Sunday and a bunch of roses for you', type:'Reel', v:176000, likes:'1,168', shares:'52', cover:'c-roses.jpg', proof:'p-roses.jpg', cr:CR.post,
+  {id:'roses', sg:['Fit the jewellery into everyday life while keeping it feeling premium.','Three slow, warm frames from an ordinary Sunday. The pieces sit inside the moment, so they read as something you wear every day, not just for occasions. No offer, no hard sell.','176K views and 1,168 likes with nothing to buy in the frame.'], ig:'https://www.instagram.com/reel/DX4DIZEhwVA/', a:'everyday', t:'A quiet Sunday and a bunch of roses for you', type:'Reel', v:176000, likes:'1,168', shares:'52', cover:'c-roses.jpg', proof:'p-roses.jpg', cr:CR.post,
    note:'Slow, warm, three frames. No hard sell, just a mood the audience wanted to sit in.'},
-  {id:'matsya', ig:'https://www.instagram.com/p/DanGKFzjyM3/', a:'matsya', t:'Our favourite way to wear Matsya', type:'Carousel', v:42800, likes:'433', shares:'57', cover:'c-matsya.jpg', proof:'p-matsya.jpg', cr:['Idea','Copy','Strategy'],
+  {id:'matsya', sg:['Show that a statement collection can still be worn every day.','Stacked rings and statement earrings worn together, showing Matsya as bold and still functional: pieces you can actually live in.','433 likes and 57 shares, keeping Matsya on the feed as something to wear, not just admire.'], ig:'https://www.instagram.com/p/DanGKFzjyM3/', a:'matsya', t:'Our favourite way to wear Matsya', type:'Carousel', v:42800, likes:'433', shares:'57', cover:'c-matsya.jpg', proof:'p-matsya.jpg', cr:['Idea','Copy','Strategy'],
    note:'Stack the rings, let the statement earrings do the rest. A styling carousel that doubles as a how-to.'},
 
   {id:'earring', goal:'Making of', ig:'https://www.instagram.com/reel/DasPKmPhKi4/', a:'matsya', t:'A little behind-the-scenes magic', type:'Reel', v:87400, likes:'607', shares:'103', cover:'c-earring.jpg', proof:'p-earring.jpg', cr:['Idea','Copy','Strategy'],
@@ -916,6 +922,7 @@ const DUR = 4500;
 function renderBars(){
   document.getElementById('bars').innerHTML = HITS.map((id,i)=>`<button aria-label="Hit ${i+1}" data-hit="${i}" class="${i<state.i?'done':''}"><i ${i===state.i?'id="barNow"':''}></i></button>`).join('');
 }
+function sgBlock(t){ if(!t.sg) return `<p class="note">${esc(t.note)}</p>`; const L=['Goal','How','Impact']; return `<dl class="sg">${t.sg.map((x,i)=>`<div><dt>${L[i]}</dt><dd>${esc(x)}</dd></div>`).join('')}</dl>`; }
 function renderStory(){
   const t = BY[HITS[state.i]], a = ALB[t.a];
   state.cur = t.id;
@@ -925,7 +932,7 @@ function renderStory(){
       <span class="num">${String(state.i+1).padStart(2,'0')} / ${String(HITS.length).padStart(2,'0')} · ${esc(t.type)}</span>
       <h3>${esc(t.t)}</h3>
       <span class="albname">${esc(a.brand)} · ${esc(a.title)}${t.creator?' · with '+esc(t.creator):''}</span>
-      <p class="note">${esc(t.note)}</p>
+      ${sgBlock(t)}
       ${stats(t)}
       ${credits(t)}
       ${t.ig?`<a class="btn blush" style="align-self:flex-start" href="${t.ig}" target="_blank" rel="noopener">View on Instagram ↗</a>`:''}
@@ -968,7 +975,7 @@ function jump(i){ state.i=i; state.p=0; renderStory(); paint(); }
 const ALLT=['flowers','guldasta','sisters','care','moms','dday','mood','difficult','ring','earring','lotusstory','unboxing','bts'].sort((a,b)=>LK(BY[b])-LK(BY[a]));
 document.getElementById('alltracks').innerHTML = ALLT.map((id,i)=>row(BY[id],i+1,true)).join('');
 document.getElementById('funnel').innerHTML = '<div class="eyebrow">Launch of the season · Pichwai, first nine days</div>' +
-  [['17M','views'],['93%','reach from non-followers'],['36K','profile visits'],['5K','bio link taps']].map((f,i)=>`${i?'<span class="arrow">→</span>':''}<div class="stat"><b>${f[0]}</b><span>${f[1]}</span></div>`).join('');
+  [['17M','views'],['93%','reach from non-followers'],['36K','profile visits']].map((f,i)=>`${i?'<span class="arrow">→</span>':''}<div class="stat"><b>${f[0]}</b><span>${f[1]}</span></div>`).join('');
 document.getElementById('shelf').innerHTML = ALBUMS.map(a=>`<button class="alb" data-alb="${a.id}"><div class="sleeve"><span class="vinyl"></span>${albCov(a)}</div><b>${esc(a.title)}</b><span>${a.year} · ${esc(a.brand)} · ${esc(a.kind)}</span></button>`).join('');
 
 
@@ -1046,7 +1053,7 @@ function openTrack(id){
   sheet(`<div class="sh-track"><div class="shot">${t.proof?`<div class="frame4"><img class="bg" src="img/${t.proof}" alt="" aria-hidden="true"><img class="fg" src="img/${t.proof}" alt="Instagram post: ${esc(t.t)}"></div>`:cov(t)}</div>
     <div class="sh-body"><span class="eyebrow">${t.goal?esc(t.goal)+' · ':''}${esc(t.type)} · ${esc(a.title)}</span><h3>${esc(t.t)}</h3>
     ${t.lines?`<div class="msg out" style="max-width:100%">${esc(t.lines)}</div>`:''}
-    <p>${esc(t.note)}</p>${stats(t)}${credits(t)}
+    ${t.sg?sgBlock(t):`<p>${esc(t.note)}</p>`}${stats(t)}${credits(t)}
     ${t.watch?`<div class="watch">${t.watch.map(w=>`<div class="eyebrow">Watch ${esc(w.g.toLowerCase())}</div><div class="links2">${w.items.map(([n,u,l])=>`<a class="btn blush" href="${u}" target="_blank" rel="noopener"><span class="playic">${IC.play}</span>${esc(n)}${l?`<small class="lk">${esc(l)}</small>`:''}</a>`).join('')}</div>`).join('')}</div>`:''}
     <div style="display:flex;gap:10px;flex-wrap:wrap">${t.ig?`<a class="btn blush" href="${t.ig}" target="_blank" rel="noopener">View on Instagram ↗</a>`:''}${t.link?`<a class="btn blush" href="${t.link}" target="_blank" rel="noopener">See the panel ↗</a>`:''}${t.channel?`<a class="btn blush" href="${t.channel}" target="_blank" rel="noopener">Visit the channel ↗</a>`:''} ${a.brand==='Shaya'&&!t.ig?`<a class="chipbtn" href="https://www.instagram.com/shayagrams/" target="_blank" rel="noopener">@shayagrams ↗</a>`:''}</div></div></div>`);
 }
